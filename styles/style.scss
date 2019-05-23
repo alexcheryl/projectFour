@@ -14,10 +14,7 @@ html {
   margin: 0 auto;
   border: 1px solid blue;
   .mainContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(center, center, column)
     height: 100vh;
   }
   
@@ -27,7 +24,12 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       border: 1px solid black;
+      text-align: center;
+      .collectiveTextBox {
+          @include flex(null, null, column);
+      }
   }
 
 .sr-only {
