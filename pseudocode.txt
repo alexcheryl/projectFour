@@ -1,0 +1,29 @@
+MOST UPDATED ONE:
+Description of Project
+
+A website that you can type in an animal and learn what the group/collective name is called. Will generate the picture of the animal as a background image with the information of the collective animal. Ex: User typed in Crows. The collective name is “A Murder of Crows”.
+
+MVP
+
+Being able to loop through the json file of the typed animal, and grab the information of what the collective name of the animal is. Also call the Pixabay API and generate a picture of the typed animal as a background image.
+
+Stretch Goals
+
+A randomized button.
+
+Pseudo Code
+
+Create app namespace to hold all methods.
+Our main page will be asking the user to type in an animal.
+Collect user input from the textbox (input[type=text]).
+We will put an event listener .click on the submit button
+Use the method .val() to grab the value of the animal the user typed in and store it in a variable. Apply .lowerCase() method to the variable.
+Error handle if the user typed in the plural of the animal so it can still be searchable.
+Use the method .split() to turn to the input into an array of individual letters.
+If the word ends in an S,  re-join the letters with .join(). Store it in a variable.
+If the word doesn’t end in an S, re-join the letters with .join(). store it in a different variable
+Use an if else statement to search the word without S, if nothing returns, (if else) search the other word that does have an S, else show an error message for the user to type in something different.
+Call the json file- we will call it by ajax. it will return an object of an array with objects in it.
+Use a filter on the array to create a new array with just the information that matches the user selection, and getting the userInput.collective value to be able to append the collective information dynamically on the page. Append using jquery.
+use the same variable of the animal with an S (plural version), to input it in the Ajax call to PIXABAY API to call it with the query of the animal in the URL and grab the first result that comes up and use it to make it as a background image of the page.
+Create a try again button to return to the home page.

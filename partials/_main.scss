@@ -1,0 +1,15 @@
+html {
+    font-size: 125%;
+    font-family: $primary-font;
+}
+
+.wrapper {
+  max-width: 1400px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
