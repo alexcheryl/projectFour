@@ -5,7 +5,7 @@ A website that you can type in an animal and learn what the group/collective nam
 
 MVP
 
-Being able to loop through the API of animal collectives, and grab the information of what the collective name of the animal searched for is. Also call the Pixabay API and generate a picture of the typed animal as a background image.
+Being able to loop through the json file of animal collectives, and grab the information of what the collective name of the animal searched for is. Also call the Pixabay API and generate a picture of the typed animal as a background image.
 
 Stretch Goals
 
@@ -22,7 +22,7 @@ Error handle if the user typed in the plural of the animal so it can still be se
 	Use the method .split() to turn to the input into two separate array of individual letters.
 	If the letter list ends in an S, take it off in one array and re-join both arrays .join(). Store it in two variables.
 	If the word doesn’t end in an S, add an S to one of the arrays and  re-join both arrays with .join(). store it in two variables.
-Use an if else statement to search the Pixabay API for the word formed from the previous array without S, if nothing returns, search the other word that does have an S, else show an error message for the user to type in something different.
-Use the same if statement to search the Collective API and have it return an object matching the search.
+Use a promise to only call the Pixabay API for the word formed from the previous array (with an S) if the first call returns a result.
+Use the same if statement to search the collective json file and have it return an object matching the search.
 Use a filter on the array to create a new array with just the information that matches the user selection, and getting the userInput.collective value to be able to append the collective information dynamically on the page. Append using jquery.
 Create a try again button to return to the home page.
