@@ -7,32 +7,29 @@ html {
     // font-family: $primary-font;
 }
 
-
 .wrapper {
   max-width: 1400px;
   width: 80%;
   margin: 0 auto;
   border: 1px solid blue;
   .mainContainer {
-    @include flex(center, center, column)
+    @include flex(center, center, column);
     height: 100vh;
   }
-  
 }
 
 .formContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      border: 1px solid black;
-      text-align: center;
-      .collectiveTextBox {
-          @include flex(null, null, column);
-      }
+    @include flex(center, center, column);
+    border: 1px solid black;
+    text-align: center;
+    .collectiveTextBox {
+        @include flex(null, null, column);
+    }
   }
 
-.sr-only {
+
+
+.srOnly {
     position: absolute;
     width: 1px;
     height: 1px;

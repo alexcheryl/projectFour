@@ -197,7 +197,7 @@ html {
     -ms-flex-direction: column;
     flex-direction: column; }
 
-.sr-only {
+.srOnly {
   position: absolute;
   width: 1px;
   height: 1px;
