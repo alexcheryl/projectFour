@@ -5,7 +5,7 @@ A website that you can type in an animal and learn what the group/collective nam
 
 MVP
 
-Being able to loop through the json file of the typed animal, and grab the information of what the collective name of the animal is. Also call the Pixabay API and generate a picture of the typed animal as a background image.
+Being able to loop through the API of animal collectives, and grab the information of what the collective name of the animal searched for is. Also call the Pixabay API and generate a picture of the typed animal as a background image.
 
 Stretch Goals
 
@@ -19,11 +19,10 @@ Collect user input from the textbox (input[type=text]).
 We will put an event listener .click on the submit button
 Use the method .val() to grab the value of the animal the user typed in and store it in a variable. Apply .lowerCase() method to the variable.
 Error handle if the user typed in the plural of the animal so it can still be searchable.
-Use the method .split() to turn to the input into an array of individual letters.
-If the word ends in an S,  re-join the letters with .join(). Store it in a variable.
-If the word doesn’t end in an S, re-join the letters with .join(). store it in a different variable
-Use an if else statement to search the word without S, if nothing returns, (if else) search the other word that does have an S, else show an error message for the user to type in something different.
-Call the json file- we will call it by ajax. it will return an object of an array with objects in it.
+	Use the method .split() to turn to the input into two separate array of individual letters.
+	If the letter list ends in an S, take it off in one array and re-join both arrays .join(). Store it in two variables.
+	If the word doesn’t end in an S, add an S to one of the arrays and  re-join both arrays with .join(). store it in two variables.
+Use an if else statement to search the Pixabay API for the word formed from the previous array without S, if nothing returns, search the other word that does have an S, else show an error message for the user to type in something different.
+Use the same if statement to search the Collective API and have it return an object matching the search.
 Use a filter on the array to create a new array with just the information that matches the user selection, and getting the userInput.collective value to be able to append the collective information dynamically on the page. Append using jquery.
-use the same variable of the animal with an S (plural version), to input it in the Ajax call to PIXABAY API to call it with the query of the animal in the URL and grab the first result that comes up and use it to make it as a background image of the page.
 Create a try again button to return to the home page.
