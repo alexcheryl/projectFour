@@ -8,19 +8,35 @@
 	<title>Animal Collective</title>
 </head>
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<div class="wrapper">
+		<div class="mainContainer">
+			<header>
+				<h1>Animal Collective</h1>
+			</header>
+			<main>
+				<div class="formContainer">
+					<form id="form">
+						<div class="collectiveTextBox">
+							<label for="textBox">Type an animal in the box to learn it's collective name!</label>
+							<input type="text" class="textBox" id="textBox" name="textBox" required="true"
+								placeholder="Ex. Crows">
+						</div>
+						<div class="submitContainer">
+							<label for="submitAnimal" class="visuallyHidden" id="submitAnimal">Click hereto guess word!</label>
+							<button class="submitButton" type="submit" id="submitAnimal">Submit!</button>
+							<p> - or - </p>
+							<label for="randomCollective" class="visuallyHidden" id="randomCollective">Click here for random collective</label>
+							<button class="randomButton" type="submit" id="randomCollective">Learn about a random collective!</button>
+						</div>
+						<div class="playAgain">
+							<label for="playAgainBtn" class="visuallyHidden" id="playAgainBtn">Click here to play again!</label>
+							<button class="playAgain" type="submit" id="playAgainBtn">Play Again</button>
+						</div>
+					</form>
+				</div>
+			</main>
+		</div>
+	</div>
 
 
 	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="

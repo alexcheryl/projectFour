@@ -1,0 +1,43 @@
+@import "partials/_setup.scss";
+@import "partials/_mixins.scss";
+@import "partials/_variables.scss";
+
+html {
+    font-size: 125%;
+    // font-family: $primary-font;
+}
+
+
+.wrapper {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid blue;
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+}
+
+.formContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+  }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.playAgain {
+    display: none;
+}
+
