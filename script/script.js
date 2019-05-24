@@ -5,7 +5,8 @@ app.key = `12566759-41f529f34c688ea00af1b8bca`;
 app.collectiveURL = `https://api.myjson.com/bins/18g2uk`;
 
 app.photoURL = `https://pixabay.com/api/?`;
-// key=12566759-41f529f34c688ea00af1b8bca&q=elephant&image_type=photo
+
+app.animalInput;
 
 app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	
@@ -18,40 +19,45 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	}
 	}).then(function (results) {
 		
-		if (results.animals[singularAnimal] === undefined) {
-			console.log(results.animals[pluralAnimal])
-		} else if (results.animals[pluralAnimal] === undefined) {
-			console.log(results.animals[singularAnimal])
+		if (results.animals[singularAnimal] !== undefined) {
+			app.animalInput = results.animals[singularAnimal]			
+			console.log(animalInput)
+		} else if (results.animals[pluralAnimal] !== undefined) {
+			app.animalInput = results.animals[pluralAnimal]
 		} else {
-			// this is sketchy // try kangaroos but also purple but also injfjgdnrg - gives diff things
 			console.log('please enter valid animal')
 		}
-	
-		app.photoResults = $.ajax({
-			url: app.photoURL, 
-			method: 'GET',
-			dataType: 'json',
-			data: {
-			key: app.key,
-			format: 'json',
-			q: `${pluralAnimal}`
-			}
-		}).then(function (results) {
-			console.log(results.hits[1].largeImageURL);
-		})
-	})
-	
-} 
 
+		console.log(app.animalInput);
 
-
-app.displayPhoto = () => {
-
+		if (app.animalInput !== undefined) {
+			app.photoResults = $.ajax({
+				url: app.photoURL, 
+				method: 'GET',
+				dataType: 'json',
+				data: {
+					key: app.key,
+					format: 'json',
+					q: `${pluralAnimal}`,
+					orientation: `horizontal`,
+					image_type: `photo`
+				}
+			}).then(function (results) {
+				console.log(results.hits[0].largeImageURL);
+			})
+		}
+	});
 };
 
-app.displayCollective = () => {
 
-};
+
+// app.displayPhoto = () => {
+
+// };
+
+// app.displayCollective = () => {
+
+// };
 
 app.userInputErrorHandle = (animalInLetters) => {
 	const lastLetter = animalInLetters.slice(-1);
@@ -67,8 +73,7 @@ app.userInputErrorHandle = (animalInLetters) => {
 		const pluralAnimal = animalInLetters.join('');
 		app.collectiveResults(pluralAnimal, singularAnimal)
 	}
-}
-
+};
 
 app.userInput = () => {
 	$('#submitAnimal').click(function (event) {
@@ -79,10 +84,11 @@ app.userInput = () => {
 		app.userInputErrorHandle(animalInLetters);
 	});
 };
-app.userInput();
+
+// app.userInput();
 
 app.init = () => {
-	// app.userInput();
+	app.userInput();
 };
 $(function () {
 	app.init();
