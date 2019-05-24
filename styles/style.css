@@ -151,11 +151,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 125%; }
 
+body {
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  height: 100vh; }
+
 .wrapper {
   max-width: 1400px;
   width: 80%;
-  margin: 0 auto;
-  border: 1px solid blue; }
+  margin: 0 auto; }
   .wrapper .mainContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -186,7 +190,6 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 1px solid black;
   text-align: center; }
   .formContainer .collectiveTextBox {
     display: -webkit-box;
