@@ -189,10 +189,6 @@ html {
 
 .originalBackground {
   background-image: url(../assets/bg.png);
-}
-
-.newBackground,
-.originalBackground {
   background-size: cover;
   height: 100vh;
 }
@@ -256,4 +252,13 @@ html {
 
 .playAgain {
   display: none;
+}
+
+.instructionContainer {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.instruction {
+  color: white;
 }

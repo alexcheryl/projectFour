@@ -18,7 +18,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		format: 'json'
 	}
 	}).then(function (results) {
-		
+
 		if (results.animals[singularAnimal] !== undefined) {
 			app.animalInput = results.animals[singularAnimal]			
 			console.log(animalInput)
@@ -26,9 +26,11 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			app.animalInput = results.animals[pluralAnimal]
 		} else {
 			console.log('please enter valid animal')
-		}
+			$(`#instruction`).html(`Sorry, that animal is not in our database. Try another one!`);
+		};
 
-		console.log(app.animalInput);
+		console.log();
+		app.displayCollective(pluralAnimal, app.animalInput);
 
 		if (app.animalInput !== undefined) {
 			app.photoResults = $.ajax({
@@ -40,7 +42,8 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					format: 'json',
 					q: `${pluralAnimal}`,
 					orientation: `horizontal`,
-					image_type: `photo`
+					image_type: `photo`,
+					editors_choice: true
 				}
 			}).then(function (results) {
 				app.displayBackground(results.hits[0].largeImageURL)
@@ -52,17 +55,13 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 
 
 app.displayBackground = (results) => {
-	console.log(results)
-	$(`body`).removeClass(`originalBackground`);
-	// $(`body`).addClass(`newBackground`);
 	$(`.newBackground`).css(`background-image`, `url(${results})`);
-	// background - image: url(../assets/bg.png);
-	// background - size: cover;
+	};
+
+app.displayCollective = (animal, results) => {
+	$(`#instructionContainer`).html(`<p>A collection of ${animal} is known as a ${results.collective}</p>`);
+	console.log(app.animalInput)
 };
-
-// app.displayCollective = () => {
-
-// };
 
 app.userInputErrorHandle = (animalInLetters) => {
 	const lastLetter = animalInLetters.slice(-1);
