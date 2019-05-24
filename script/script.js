@@ -53,7 +53,11 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 
 app.displayBackground = (results) => {
 	console.log(results)
-	$(`body`).css(`"background-image", "url(${results})"`);
+	$(`body`).removeClass(`originalBackground`);
+	// $(`body`).addClass(`newBackground`);
+	$(`.newBackground`).css(`background-image`, `url(${results})`);
+	// background - image: url(../assets/bg.png);
+	// background - size: cover;
 };
 
 // app.displayCollective = () => {

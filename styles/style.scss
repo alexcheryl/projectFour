@@ -7,8 +7,12 @@ html {
     // font-family: $primary-font;
 }
 
-body {
+.originalBackground {
     background-image: url(../assets/bg.png);
+ }
+
+.newBackground,
+.originalBackground {
     background-size: cover;
     height: 100vh;
 }
