@@ -43,7 +43,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					image_type: `photo`
 				}
 			}).then(function (results) {
-				console.log(results.hits[0].largeImageURL);
+				app.displayBackground(results.hits[0].largeImageURL)
 			})
 		}
 	});
@@ -51,9 +51,10 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 
 
 
-// app.displayPhoto = () => {
-
-// };
+app.displayBackground = (results) => {
+	console.log(results)
+	$(`body`).css(`"background-image", "url(${results})"`);
+};
 
 // app.displayCollective = () => {
 
