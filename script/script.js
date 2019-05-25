@@ -21,9 +21,10 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 
 		if (results.animals[singularAnimal] !== undefined) {
 			app.animalInput = results.animals[singularAnimal]			
-			console.log(animalInput)
+			console.log(app.animalInput)
 		} else if (results.animals[pluralAnimal] !== undefined) {
 			app.animalInput = results.animals[pluralAnimal]
+			console.log(app.animalInput)
 		} else {
 			console.log('please enter valid animal')
 			$(`#instruction`).html(`Sorry, that animal is not in our database. Try another one!`);
@@ -31,6 +32,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 
 		console.log();
 		app.displayCollective(pluralAnimal, app.animalInput);
+
 
 		if (app.animalInput !== undefined) {
 			app.photoResults = $.ajax({
@@ -46,12 +48,30 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					editors_choice: true
 				}
 			}).then(function (results) {
-				app.displayBackground(results.hits[0].largeImageURL)
+				// problem with the ferret was that it was coming back undefined, so I just put an extra if / else statement that if its undefined then do ajax call without editors choice :)
+
+				if (results.hits[0] !== undefined) {
+					app.displayBackground(results.hits[0].largeImageURL)
+				} else {
+					app.photoResults = $.ajax({
+					url: app.photoURL, 
+					method: 'GET',
+					dataType: 'json',
+					data: {
+						key: app.key,
+						format: 'json',
+						q: `${pluralAnimal}`,
+						orientation: `horizontal`,
+						image_type: `photo`,
+						}
+					}).then(function (results) {
+						app.displayBackground(results.hits[0].largeImageURL)
+					})
+				}	
 			})
-		}
+		} 
 	});
 };
-
 
 
 app.displayBackground = (results) => {
@@ -65,18 +85,38 @@ app.displayCollective = (animal, results) => {
 
 app.userInputErrorHandle = (animalInLetters) => {
 	const lastLetter = animalInLetters.slice(-1);
-	if (lastLetter[0] === 's') {
+	const secondLast = animalInLetters.slice(-2);
+	const originalAnimal = animalInLetters.join('');
+
+	if (secondLast[0] === 'e'&& lastLetter[0] === 's') {
+		// to fix the fish situation ,
+
+		const pluralAnimal = animalInLetters.join('');
+		const singular = animalInLetters.slice(0, -2);
+		const singularAnimal = singular.join('');
+		console.log(pluralAnimal, singularAnimal);
+		app.collectiveResults(pluralAnimal, singularAnimal);
+	} else if (lastLetter[0] === 's') {
 		const pluralAnimal = animalInLetters.join('');
 		const singular = animalInLetters.slice(0, -1);
 		const singularAnimal = singular.join('');
+		console.log(pluralAnimal, singularAnimal)
 		app.collectiveResults(pluralAnimal, singularAnimal);
-		
+	} else if (secondLast[0] === 's' && lastLetter[0] === 'h') {
+		// to fix the fish situation lol 
+
+		const singularAnimal = animalInLetters.join('');
+		const plural = animalInLetters.push('e', 's');
+		const pluralAnimal = animalInLetters.join('');
+		app.collectiveResults(pluralAnimal, singularAnimal)
+		console.log(pluralAnimal, singularAnimal)
 	} else if (lastLetter[0] != 's') {
 		const singularAnimal = animalInLetters.join('');
 		const plural = animalInLetters.push('s');
 		const pluralAnimal = animalInLetters.join('');
+		console.log(pluralAnimal, singularAnimal)
 		app.collectiveResults(pluralAnimal, singularAnimal)
-	}
+	} 
 };
 
 app.userInput = () => {
@@ -88,8 +128,6 @@ app.userInput = () => {
 		app.userInputErrorHandle(animalInLetters);
 	});
 };
-
-// app.userInput();
 
 app.init = () => {
 	app.userInput();
