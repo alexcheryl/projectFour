@@ -43,6 +43,7 @@ h1 {
 .formContainer {
     @include flex(center, center, column);
     text-align: center;
+    padding-top: 3%;
     .collectiveTextBox {
         @include flex(null, null, column);
     }
@@ -62,19 +63,27 @@ h1 {
 
 #instructionContainer {
     width: 75%;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 0 auto;
     font-weight: 400;
+    font-family: 'Zilla Slab Highlight';
 }
 
+.fact {
+    font-family: 'Montserrat';
+    margin-bottom: 0;
+}
 .animalText {
     font-weight: 700;
 }
 
 .collectiveText{
     font-family: 'Zilla Slab Highlight';
+    font-size: 1.5rem;
 }
+
 #instruction {
     color: black;
     padding: 1px;
+    margin-bottom: 0;
 }

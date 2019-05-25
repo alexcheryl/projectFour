@@ -204,7 +204,8 @@ h1 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  padding-top: 3%; }
   .formContainer .collectiveTextBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -225,16 +226,23 @@ h1 {
 
 #instructionContainer {
   width: 75%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0 auto;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: 'Zilla Slab Highlight'; }
+
+.fact {
+  font-family: 'Montserrat';
+  margin-bottom: 0; }
 
 .animalText {
   font-weight: 700; }
 
 .collectiveText {
-  font-family: 'Zilla Slab Highlight'; }
+  font-family: 'Zilla Slab Highlight';
+  font-size: 1.5rem; }
 
 #instruction {
   color: black;
-  padding: 1px; }
+  padding: 1px;
+  margin-bottom: 0; }

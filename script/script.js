@@ -82,7 +82,7 @@ app.displayBackground = (results) => {
 	};
 
 app.displayCollective = (animal, results) => {
-	$(`#instructionContainer`).html(`<p>A collection of <span class="animalText">${animal}</span> is known as a: <br><span class="collectiveText">${results.collective}</span></p>`);
+	$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${animal}</span> is known as a:</p><span class="collectiveText">${results.collective}</span>`);
 	console.log(app.animalInput);
 };
 
