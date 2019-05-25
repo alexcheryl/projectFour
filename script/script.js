@@ -25,9 +25,12 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		} else if (results.animals[pluralAnimal] !== undefined) {
 			app.animalInput = results.animals[pluralAnimal]
 			console.log(app.animalInput)
+		} else if (singularAnimal === '' || pluralAnimal === 's') {
+			$(`#instruction`).html(`Please type in an animal before hitting submit! (Ex. Dogs)`)
+			console.log('please type an animal')	
 		} else {
 			console.log('please enter valid animal')
-			$(`#instruction`).html(`Sorry, that animal is not in our database. Try another one!`);
+			$(`#instruction`).html(`Sorry, that animal is not in our database. Try another one! (Ex. Cats)`);
 		};
 
 		console.log();
@@ -79,8 +82,8 @@ app.displayBackground = (results) => {
 	};
 
 app.displayCollective = (animal, results) => {
-	$(`#instructionContainer`).html(`<p>A collection of ${animal} is known as a ${results.collective}</p>`);
-	console.log(app.animalInput)
+	$(`#instructionContainer`).html(`<p>A collection of <span class="animalText">${animal}</span> is known as a: <br><span class="collectiveText">${results.collective}</span></p>`);
+	console.log(app.animalInput);
 };
 
 app.userInputErrorHandle = (animalInLetters) => {
