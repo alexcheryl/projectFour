@@ -23,7 +23,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	
 		if (pluralAnimal >= 0) {
 			let randomAnimalArray = Object.entries(results.animals)
-			app.animalInput = randomAnimalArray[pluralAnimal];	
+			app.animalInput = randomAnimalArray[pluralAnimal];
 		} else if (results.animals[singularAnimal] !== undefined) {
 			app.animalInput = results.animals[singularAnimal]			
 			console.log(app.animalInput)
@@ -53,9 +53,9 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					image_type: `photo`,
 					editors_choice: true
 				}
-			}).then(function (results) {
-				// problem with the ferret was that it was coming back undefined, so I just put an extra if / else statement that if its undefined then do ajax call without editors choice :)
+			}).then(function (results, pluralAnimal) {
 
+				console.log(app.animalInput[0])
 				if (results.hits[0] !== undefined) {
 					app.displayBackground(results.hits[0].largeImageURL)
 				} else {
@@ -66,7 +66,11 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					data: {
 						key: app.key,
 						format: 'json',
-						q: `${pluralAnimal}`,
+						// if (pluralAnimal >= 0) {
+						q: `${app.animalInput[0]}`,
+						// } else {
+							q: `${pluralAnimal}`,
+						// },
 						orientation: `horizontal`,
 						image_type: `photo`,
 						}
