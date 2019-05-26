@@ -142,6 +142,7 @@ app.userInput = () => {
 		const animal = userAnimal.toLowerCase();
 		const animalInLetters = animal.split('');
 		app.userInputErrorHandle(animalInLetters);
+		app.hideButton();
 	});
 };
 
@@ -149,8 +150,13 @@ app.randomClick = () => {
 	$(`#randomCollective`).click(function (event) {
 		event.preventDefault()
 		app.randomChoice();
+		app.hideButton();
 	});
 };
+
+app.hideButton = () => {
+	$(`.submitContainer, .collectiveTextBox`).hide(`slow`);
+}
 
 app.randomChoice = () => {
 	let random = Math.floor(Math.random() * 1000) + 1;
