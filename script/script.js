@@ -59,7 +59,8 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 				// console.log(app.animalInput[0])
 				if (results.hits[0] !== undefined) {
 					app.displayBackground(results.hits[0].largeImageURL)
-					app.displayCollective(pluralAnimal, app.animalInput);																											
+					app.displayCollective(pluralAnimal, app.animalInput);
+					app.hideButton();
 				} else {
 					app.photoResults = $.ajax({
 					url: app.photoURL, 
@@ -79,6 +80,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 						if (results.hits[0] !== undefined) {
 							app.displayBackground(results.hits[0].largeImageURL)
 							app.displayCollective(pluralAnimal, app.animalInput);
+							app.hideButton();
 						} else {
 							console.log(`looped!`)
 							app.randomChoice()
@@ -92,7 +94,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 
 app.displayBackground = (results) => {
 	$(`.newBackground`).css(`background-image`, `url(${results})`);
-	};
+};
 
 app.displayCollective = (animal, results) => {
 
@@ -142,7 +144,6 @@ app.userInput = () => {
 		const animal = userAnimal.toLowerCase();
 		const animalInLetters = animal.split('');
 		app.userInputErrorHandle(animalInLetters);
-		app.hideButton();
 	});
 };
 
@@ -150,12 +151,12 @@ app.randomClick = () => {
 	$(`#randomCollective`).click(function (event) {
 		event.preventDefault()
 		app.randomChoice();
-		app.hideButton();
 	});
 };
 
 app.hideButton = () => {
-	$(`.submitContainer, .collectiveTextBox`).hide(`slow`);
+	$(`.submitContainer, .collectiveTextBox`).hide(`1000`);
+	$(`.playAgain`).show(`700`)
 }
 
 app.randomChoice = () => {
