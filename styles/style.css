@@ -152,6 +152,11 @@ html {
   font-size: 125%;
   font-family: "Montserrat", sans-serif; }
 
+:hover {
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
+
 .originalBackground {
   background-image: url(../assets/bg6.png);
   background-size: cover;
@@ -213,7 +218,50 @@ h1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 5%; }
+    .formContainer .collectiveTextBox .textBox {
+      text-align: center; }
+
+form {
+  width: 60%; }
+
+.btn {
+  padding: 1.5% 5%;
+  background-color: white;
+  border: 1.5px solid black;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
+  .btn:hover {
+    letter-spacing: 2.5px;
+    -webkit-box-shadow: 5px 5px lightsteelblue;
+    box-shadow: 5px 5px lightsteelblue;
+    border: none; }
+  .btn:active {
+    -webkit-box-shadow: 2px 2px lightsteelblue;
+    box-shadow: 2px 2px lightsteelblue;
+    -webkit-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+    transition: 0.2s all ease; }
+
+.submitButton {
+  -webkit-box-shadow: 3px 3px grey;
+  box-shadow: 3px 3px grey;
+  font-weight: 600; }
+
+.randomButton {
+  font-size: 0.8rem;
+  width: 85%;
+  font-weight: 500;
+  border: 2px dotted grey; }
+  .randomButton:hover {
+    letter-spacing: 1.5px; }
+
+.randomContainer {
+  margin-top: 8%; }
+  .randomContainer p {
+    margin-bottom: 2%; }
 
 .srOnly {
   position: absolute;

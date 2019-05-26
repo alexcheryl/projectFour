@@ -63,14 +63,15 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					url: app.photoURL, 
 					method: 'GET',
 					dataType: 'json',
+
 					data: {
 						key: app.key,
 						format: 'json',
-						// if (pluralAnimal >= 0) {
+						if (pluralAnimal >= 0) {
 						q: `${app.animalInput[0]}`,
-						// } else {
+						 } else {
 							q: `${pluralAnimal}`,
-						// },
+						},
 						orientation: `horizontal`,
 						image_type: `photo`,
 						}
