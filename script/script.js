@@ -26,16 +26,14 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			app.animalInput = results.animals[pluralAnimal]
 			console.log(app.animalInput)
 		} else if (singularAnimal === '' || pluralAnimal === 's') {
-			$(`#instruction`).html(`Please type in an animal before hitting submit! (Ex. Dogs)`)
+			$(`#instruction`).html(`Please type in an animal before hitting submit! (ex. Dogs)`)
 			console.log('please type an animal')	
 		} else {
 			console.log('please enter valid animal')
-			$(`#instruction`).html(`Sorry, that animal is not in our database. Try another one! (Ex. Cats)`);
+			$(`#instruction`).html(`Sorry, that animal is not in our database. Try another one! (ex. Cats)`);
 		};
 
-		console.log();
 		app.displayCollective(pluralAnimal, app.animalInput);
-
 
 		if (app.animalInput !== undefined) {
 			app.photoResults = $.ajax({
@@ -70,9 +68,9 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					}).then(function (results) {
 						app.displayBackground(results.hits[0].largeImageURL)
 					})
-				}	
+				}
 			})
-		} 
+		}
 	});
 };
 
@@ -99,12 +97,14 @@ app.userInputErrorHandle = (animalInLetters) => {
 		const singularAnimal = singular.join('');
 		console.log(pluralAnimal, singularAnimal);
 		app.collectiveResults(pluralAnimal, singularAnimal);
+
 	} else if (lastLetter[0] === 's') {
 		const pluralAnimal = animalInLetters.join('');
 		const singular = animalInLetters.slice(0, -1);
 		const singularAnimal = singular.join('');
 		console.log(pluralAnimal, singularAnimal)
 		app.collectiveResults(pluralAnimal, singularAnimal);
+
 	} else if (secondLast[0] === 's' && lastLetter[0] === 'h') {
 		// to fix the fish situation lol 
 
@@ -132,9 +132,19 @@ app.userInput = () => {
 	});
 };
 
+app.randomChoice = (results) => {
+	$(`#randomCollective`).click(function (event) {
+		event.preventDefault()
+		let randomChoice = Math.floor(Math.random() * results.length) + 1;
+	});
+	console.log(results);
+};
+
 app.init = () => {
 	app.userInput();
+	app.randomChoice();
 };
+
 $(function () {
 	app.init();
 });
