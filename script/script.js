@@ -30,14 +30,11 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		} else if (results.animals[pluralAnimal] !== undefined) {
 			app.animalInput = results.animals[pluralAnimal]
 			console.log(app.animalInput)
-		} else if (singularAnimal === undefined || pluralAnimal === undefined) {
-
 		} else if (singularAnimal === `` || pluralAnimal === `s`) {
 			$(`#instruction`).html(`Please type in an animal before hitting submit! (ex. Dogs)`)
 		} else {
 			$(`#instruction`).html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
 		};
-
 
 		if (app.animalInput !== undefined) {
 			if (pluralAnimal >= 0) {
@@ -56,7 +53,6 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					q: query,
 					orientation: `horizontal`,
 					image_type: `photo`,
-					category: `animals`,
 					editors_choice: true
 				}
 			}).then(function (results) {
@@ -76,7 +72,6 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 						q: query,
 						orientation: `horizontal`,
 						image_type: `photo`,
-						category: `animals`,
 						editors_choice: false
 					}
 				}).then(function (results) {
@@ -95,16 +90,21 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	});
 };
 
-
 app.displayBackground = (results) => {
 	$(`.newBackground`).css(`background-image`, `url(${results})`);
 	};
 
 app.displayCollective = (animal, results) => {
+
 	if (animal >= 0) {
-		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${app.animalInput[0]}</span> is known as a:</p><span class="collectiveText">${results[1].collective}</span>`);
+		let randomResultsString = results[1].collective;
+		let randomLowerCaseString = randomResultsString.toLowerCase();
+		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${app.animalInput[0]}</span> is known as</p><span class="collectiveText">${randomLowerCaseString}</span>`);
 	} else {
-		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${animal}</span> is known as a:</p><span class="collectiveText">${results.collective}</span>`);
+		console.log(results.collective)
+		let resultsString = results.collective;
+		let lowerCaseString = resultsString.toLowerCase();
+		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${animal}</span> is known as</p><span class="collectiveText">${lowerCaseString}</span>`);
 	}
 };
 
