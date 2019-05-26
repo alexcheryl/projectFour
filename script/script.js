@@ -20,7 +20,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		format: 'json'
 	}
 	}).then(function (results) {
-	
+		
 		if (pluralAnimal >= 0) {
 			let randomAnimalArray = Object.entries(results.animals)
 			app.animalInput = randomAnimalArray[pluralAnimal];
@@ -56,7 +56,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					editors_choice: true
 				}
 			}).then(function (results) {
-				console.log(app.animalInput[0])
+				// console.log(app.animalInput[0])
 				if (results.hits[0] !== undefined) {
 					app.displayBackground(results.hits[0].largeImageURL)
 					app.displayCollective(pluralAnimal, app.animalInput);																											

@@ -63,7 +63,7 @@ main {
     
 }
 form {
-    width: 40%;
+    width: 50%;
 }
 
 .btn {
@@ -81,6 +81,13 @@ form {
     &:active {
         box-shadow: 2px 2px lightsteelblue;
         transition: 0.2s all ease;
+    }
+}
+
+.randomButton {
+    width: 50%;
+    &:hover {
+    letter-spacing: 1px;
     }
 }
 
