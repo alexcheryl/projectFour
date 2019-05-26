@@ -210,7 +210,7 @@ h1 {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  padding-top: 3%; }
+  padding-top: 4%; }
   .formContainer .collectiveTextBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -221,18 +221,27 @@ h1 {
     flex-direction: column;
     margin-bottom: 5%; }
     .formContainer .collectiveTextBox .textBox {
-      text-align: center; }
+      text-align: center;
+      height: 50px;
+      border: 1.5px dotted black;
+      margin-bottom: 1%; }
+
+main {
+  width: 100%; }
 
 form {
-  width: 60%; }
+  width: 40%; }
 
 .btn {
-  padding: 1.5% 5%;
+  padding: 1% 3%;
   background-color: white;
   border: 1.5px solid black;
   -webkit-transition: 0.5s all ease;
   -o-transition: 0.5s all ease;
-  transition: 0.5s all ease; }
+  transition: 0.5s all ease;
+  -webkit-box-shadow: 3px 3px grey;
+  box-shadow: 3px 3px grey;
+  font-weight: 600; }
   .btn:hover {
     letter-spacing: 2.5px;
     -webkit-box-shadow: 5px 5px lightsteelblue;
@@ -245,23 +254,12 @@ form {
     -o-transition: 0.2s all ease;
     transition: 0.2s all ease; }
 
-.submitButton {
-  -webkit-box-shadow: 3px 3px grey;
-  box-shadow: 3px 3px grey;
-  font-weight: 600; }
-
-.randomButton {
-  font-size: 0.8rem;
-  width: 85%;
-  font-weight: 500;
-  border: 2px dotted grey; }
-  .randomButton:hover {
-    letter-spacing: 1.5px; }
-
 .randomContainer {
-  margin-top: 8%; }
+  margin-top: 12%; }
   .randomContainer p {
-    margin-bottom: 2%; }
+    margin-bottom: 2%;
+    text-shadow: 3px 3px white;
+    font-weight: 700; }
 
 .srOnly {
   position: absolute;

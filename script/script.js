@@ -67,11 +67,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					data: {
 						key: app.key,
 						format: 'json',
-						if (pluralAnimal >= 0) {
-						q: `${app.animalInput[0]}`,
-						 } else {
-							q: `${pluralAnimal}`,
-						},
+						q: `${pluralAnimal}`,
 						orientation: `horizontal`,
 						image_type: `photo`,
 						}
