@@ -73,15 +73,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					data: {
 						key: app.key,
 						format: 'json',
-<<<<<<< HEAD
 						q: query,
-=======
-						if (pluralAnimal >= 0) {
-						q: `${app.animalInput[0]}`,
-						 } else {
-							q: `${pluralAnimal}`,
-						},
->>>>>>> bb09cdecf16d6e7a053263246b827588ed7b5f5b
 						orientation: `horizontal`,
 						image_type: `photo`,
 						category: `animals`,
