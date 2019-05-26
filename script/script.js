@@ -8,6 +8,8 @@ app.photoURL = `https://pixabay.com/api/?`;
 
 app.animalInput;
 
+app.randomChoice;
+
 app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	
 	$.ajax({
@@ -18,8 +20,11 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		format: 'json'
 	}
 	}).then(function (results) {
-
-		if (results.animals[singularAnimal] !== undefined) {
+	
+		if (pluralAnimal >= 0) {
+			let randomAnimalArray = Object.entries(results.animals)
+			displayCollective(randomAnimalArray[pluralAnimal]);
+		} else if (results.animals[singularAnimal] !== undefined) {
 			app.animalInput = results.animals[singularAnimal]			
 			console.log(app.animalInput)
 		} else if (results.animals[pluralAnimal] !== undefined) {
@@ -33,7 +38,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			$(`#instruction`).html(`Sorry, that animal is not in our database. Try another one! (ex. Cats)`);
 		};
 
-		app.displayCollective(pluralAnimal, app.animalInput);
+		app.displayCollective(pluralAnimal, app.animalInput);																											
 
 		if (app.animalInput !== undefined) {
 			app.photoResults = $.ajax({
@@ -80,6 +85,7 @@ app.displayBackground = (results) => {
 	};
 
 app.displayCollective = (animal, results) => {
+	console.log(animal)
 	$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${animal}</span> is known as a:</p><span class="collectiveText">${results.collective}</span>`);
 	console.log(app.animalInput);
 };
@@ -95,16 +101,13 @@ app.userInputErrorHandle = (animalInLetters) => {
 		const pluralAnimal = animalInLetters.join('');
 		const singular = animalInLetters.slice(0, -2);
 		const singularAnimal = singular.join('');
-		console.log(pluralAnimal, singularAnimal);
 		app.collectiveResults(pluralAnimal, singularAnimal);
 
 	} else if (lastLetter[0] === 's') {
 		const pluralAnimal = animalInLetters.join('');
 		const singular = animalInLetters.slice(0, -1);
 		const singularAnimal = singular.join('');
-		console.log(pluralAnimal, singularAnimal)
 		app.collectiveResults(pluralAnimal, singularAnimal);
-
 	} else if (secondLast[0] === 's' && lastLetter[0] === 'h') {
 		// to fix the fish situation lol 
 
@@ -112,12 +115,10 @@ app.userInputErrorHandle = (animalInLetters) => {
 		const plural = animalInLetters.push('e', 's');
 		const pluralAnimal = animalInLetters.join('');
 		app.collectiveResults(pluralAnimal, singularAnimal)
-		console.log(pluralAnimal, singularAnimal)
 	} else if (lastLetter[0] != 's') {
 		const singularAnimal = animalInLetters.join('');
 		const plural = animalInLetters.push('s');
 		const pluralAnimal = animalInLetters.join('');
-		console.log(pluralAnimal, singularAnimal)
 		app.collectiveResults(pluralAnimal, singularAnimal)
 	} 
 };
@@ -132,12 +133,12 @@ app.userInput = () => {
 	});
 };
 
-app.randomChoice = (results) => {
+app.randomChoice = () => {
 	$(`#randomCollective`).click(function (event) {
 		event.preventDefault()
-		let randomChoice = Math.floor(Math.random() * results.length) + 1;
+		let randomChoice = Math.floor(Math.random() * 100) + 1;
+		app.collectiveResults(randomChoice)
 	});
-	console.log(results);
 };
 
 app.init = () => {
