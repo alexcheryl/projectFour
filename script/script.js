@@ -23,7 +23,8 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	
 		if (pluralAnimal >= 0) {
 			let randomAnimalArray = Object.entries(results.animals)
-			displayCollective(randomAnimalArray[pluralAnimal]);
+			app.animalInput = randomAnimalArray[pluralAnimal];	
+					 
 		} else if (results.animals[singularAnimal] !== undefined) {
 			app.animalInput = results.animals[singularAnimal]			
 			console.log(app.animalInput)
@@ -85,32 +86,28 @@ app.displayBackground = (results) => {
 	};
 
 app.displayCollective = (animal, results) => {
-	console.log(animal)
-	$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${animal}</span> is known as a:</p><span class="collectiveText">${results.collective}</span>`);
-	console.log(app.animalInput);
+	if (animal >= 0) {
+		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${app.animalInput[0]}</span> is known as a:</p><span class="collectiveText">${results[1].collective}</span>`);
+	} else {
+		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${animal}</span> is known as a:</p><span class="collectiveText">${results.collective}</span>`);
+	}
 };
 
 app.userInputErrorHandle = (animalInLetters) => {
 	const lastLetter = animalInLetters.slice(-1);
 	const secondLast = animalInLetters.slice(-2);
 	const originalAnimal = animalInLetters.join('');
-
 	if (secondLast[0] === 'e'&& lastLetter[0] === 's') {
-		// to fix the fish situation ,
-
 		const pluralAnimal = animalInLetters.join('');
 		const singular = animalInLetters.slice(0, -2);
 		const singularAnimal = singular.join('');
 		app.collectiveResults(pluralAnimal, singularAnimal);
-
 	} else if (lastLetter[0] === 's') {
 		const pluralAnimal = animalInLetters.join('');
 		const singular = animalInLetters.slice(0, -1);
 		const singularAnimal = singular.join('');
 		app.collectiveResults(pluralAnimal, singularAnimal);
 	} else if (secondLast[0] === 's' && lastLetter[0] === 'h') {
-		// to fix the fish situation lol 
-
 		const singularAnimal = animalInLetters.join('');
 		const plural = animalInLetters.push('e', 's');
 		const pluralAnimal = animalInLetters.join('');
@@ -136,7 +133,7 @@ app.userInput = () => {
 app.randomChoice = () => {
 	$(`#randomCollective`).click(function (event) {
 		event.preventDefault()
-		let randomChoice = Math.floor(Math.random() * 100) + 1;
+		let randomChoice = Math.floor(Math.random() * 1000) + 1;
 		app.collectiveResults(randomChoice)
 	});
 };
