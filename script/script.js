@@ -24,7 +24,6 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		if (pluralAnimal >= 0) {
 			let randomAnimalArray = Object.entries(results.animals)
 			app.animalInput = randomAnimalArray[pluralAnimal];	
-					 
 		} else if (results.animals[singularAnimal] !== undefined) {
 			app.animalInput = results.animals[singularAnimal]			
 			console.log(app.animalInput)
