@@ -30,17 +30,22 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		} else if (results.animals[pluralAnimal] !== undefined) {
 			app.animalInput = results.animals[pluralAnimal]
 			console.log(app.animalInput)
-		} else if (singularAnimal === '' || pluralAnimal === 's') {
+		} else if (singularAnimal === undefined || pluralAnimal === undefined) {
+
+		} else if (singularAnimal === `` || pluralAnimal === `s`) {
 			$(`#instruction`).html(`Please type in an animal before hitting submit! (ex. Dogs)`)
-			console.log('please type an animal')	
 		} else {
-			console.log('please enter valid animal')
-			$(`#instruction`).html(`Sorry, that animal is not in our database. Try another one! (ex. Cats)`);
+			$(`#instruction`).html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
 		};
 
-		app.displayCollective(pluralAnimal, app.animalInput);																											
 
 		if (app.animalInput !== undefined) {
+			if (pluralAnimal >= 0) {
+				query = app.animalInput[0];				
+			} else {
+				query = pluralAnimal;
+			}
+
 			app.photoResults = $.ajax({
 				url: app.photoURL, 
 				method: 'GET',
@@ -48,16 +53,17 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 				data: {
 					key: app.key,
 					format: 'json',
-					q: `${pluralAnimal}`,
+					q: query,
 					orientation: `horizontal`,
 					image_type: `photo`,
+					category: `animals`,
 					editors_choice: true
 				}
-			}).then(function (results, pluralAnimal) {
-
+			}).then(function (results) {
 				console.log(app.animalInput[0])
 				if (results.hits[0] !== undefined) {
 					app.displayBackground(results.hits[0].largeImageURL)
+					app.displayCollective(pluralAnimal, app.animalInput);																											
 				} else {
 					app.photoResults = $.ajax({
 					url: app.photoURL, 
@@ -66,16 +72,21 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					data: {
 						key: app.key,
 						format: 'json',
-						// if (pluralAnimal >= 0) {
-						q: `${app.animalInput[0]}`,
-						// } else {
-							q: `${pluralAnimal}`,
-						// },
+						q: query,
 						orientation: `horizontal`,
 						image_type: `photo`,
+						category: `animals`,
+						editors_choice: false
+					}
+				}).then(function (results) {
+					console.log(results.hits[0])
+						if (results.hits[0] !== undefined) {
+							app.displayBackground(results.hits[0].largeImageURL)
+							app.displayCollective(pluralAnimal, app.animalInput);
+						} else {
+							console.log(`looped!`)
+							app.randomChoice()
 						}
-					}).then(function (results) {
-						app.displayBackground(results.hits[0].largeImageURL)
 					})
 				}
 			})
@@ -133,17 +144,22 @@ app.userInput = () => {
 	});
 };
 
-app.randomChoice = () => {
+app.randomClick = () => {
 	$(`#randomCollective`).click(function (event) {
 		event.preventDefault()
-		let randomChoice = Math.floor(Math.random() * 1000) + 1;
-		app.collectiveResults(randomChoice)
+		app.randomChoice();
 	});
 };
 
+app.randomChoice = () => {
+	let random = Math.floor(Math.random() * 1000) + 1;
+	app.collectiveResults(random)
+};
+
+
 app.init = () => {
 	app.userInput();
-	app.randomChoice();
+	app.randomClick();
 };
 
 $(function () {
