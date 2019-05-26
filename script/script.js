@@ -155,8 +155,8 @@ app.randomClick = () => {
 };
 
 app.hideButton = () => {
-	$(`.submitContainer, .collectiveTextBox`).hide(`slow`);
-	$(`#playAgainBtn`)
+	$(`.submitContainer, .collectiveTextBox`).hide(`1000`);
+	$(`.playAgain`).show(`700`)
 }
 
 app.randomChoice = () => {
