@@ -42,16 +42,15 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			$(`#instruction`).html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
 		};
 
-		// only search for the
+		// only search for the photo if we get a result from the first call
 		if (app.animalInput !== undefined) {
+			// handling the fact that pluralAnimal is different depending on which button we use 
 			if (pluralAnimal >= 0) {
 				query = app.animalInput[0];
-				console.log(`random`)				
 			} else {
 				query = pluralAnimal;
-				console.log(`notrandom`)				
 			}
-
+			//pixabay call
 			app.photoResults = $.ajax({
 				url: app.photoURL, 
 				method: `GET`,
@@ -65,10 +64,13 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 					editors_choice: true
 				}
 			}).then(function (results) {
+				// if we get a picture back
 				if (results.hits[0] !== undefined) {
 					app.displayBackground(results.hits[0].largeImageURL)
+					console.log(pluralAnimal, app.animalInput)
 					app.displayCollective(pluralAnimal, app.animalInput);
 					app.hideButton();
+					//else, do the search again without the editor's choice requirement
 				} else {
 					app.photoResults = $.ajax({
 					url: app.photoURL, 
@@ -83,12 +85,13 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 						editors_choice: false
 					}
 				}).then(function (results) {
+						// if we get a picture back
 						if (results.hits[0] !== undefined) {
 							app.displayBackground(results.hits[0].largeImageURL)
 							app.displayCollective(pluralAnimal, app.animalInput);
 							app.hideButton();
 						} else {
-							console.log(`looped!`)
+							// call the randomChoice function again, looping until we have a result from both calls
 							app.randomChoice()
 						}
 					})
@@ -97,12 +100,14 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		}
 	});
 };
-
+// displaying the returned picture to the background of our page
 app.displayBackground = (results) => {
 	$(`.newBackground`).css(`background-image`, `url(${results})`);
 };
-
+// displaying the returned animal collective to our page
 app.displayCollective = (animal, results) => {
+	console.log(animal, )
+	// handling the fact that pluralAnimal is different depending on which button we use 
 	if (animal >= 0) {
 		let randomResultsString = results[1].collective;
 		let randomLowerCaseString = randomResultsString.toLowerCase();
@@ -110,7 +115,7 @@ app.displayCollective = (animal, results) => {
 	} else {
 		let resultsString = results.collective;
 		let lowerCaseString = resultsString.toLowerCase();
-		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${animal}</span> is known as</p><span class="collectiveText">${lowerCaseString}</span>`);
+		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${app.animalInput[0]}</span> is known as</p><span class="collectiveText">${lowerCaseString}</span>`);
 	}
 };
 
