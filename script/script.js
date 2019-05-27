@@ -107,37 +107,50 @@ app.displayCollective = (animal, results) => {
 
 app.userInputErrorHandle = (animal) => {
 	// split it into individual letters
-	const animalInLetters = animal.split(``);
-	// the last three letters of the word
-	const lastLetter = animalInLetters.slice(-1);
-	const secondLast = animalInLetters.slice(-2);
-	const thirdLast = animalInLetters.slice(-3);
-	let originalAnimal = animalInLetters.join(``);
+	const animalArray = animal.split(``);
+	// grab the last two letters of the word
+	const lastLetter = animalArray.slice(-1);
+	const secondLast = animalArray.slice(-2);
+	// turn the array back into a single word
+	let originalAnimal = animalArray.join(``);
+	// if the animalArray ends in y
 	if (lastLetter[0] === `y`) {
-		// const singular = animalInLetters.slice(-1)
-		console.log(lastLetter)
+		// remove the last letter
+		animalArray.pop(1);
+		// add ies to the end
+		animalArray.push(`i`, `e`, `s`);
+		// turn the array back into a single word
+		const pluralAnimal = animalArray.join(``);
+		app.collectiveResults(originalAnimal, pluralAnimal);
+		// if the animalArray ends in es
 	} else if (secondLast[0] === `e`&& lastLetter[0] === `s`) {
-		const singular = animalInLetters.slice(0, -2);
+		// remove the last two letters
+		const singular = animalArray.slice(0, -2);
+		// turn the array back into a single word
 		const singularAnimal = singular.join(``);
 		app.collectiveResults(originalAnimal, singularAnimal);
+		// if the animalArray ends in s
 	} else if (lastLetter[0] === `s`) {
-		const singular = animalInLetters.slice(0, -1);
+		// remove the last letter
+		const singular = animalArray.slice(0, -1);
+		// turn the array back into a single word
 		const singularAnimal = singular.join(``);
 		app.collectiveResults(originalAnimal, singularAnimal);
+		// if the animalArray ends in sh
 	} else if (secondLast[0] === `s` && lastLetter[0] === `h`) {
-		const singularAnimal = animalInLetters.join(``);
-		console.log(singularAnimal)		
-		const pluralAnimal = animalInLetters.join(``);
-		console.log(pluralAnimal)		
+		// turn the array back intoa  single word
+		const singularAnimal = animalArray.join(``);
+		// turn the array back into a single word
+		const pluralAnimal = animalArray.join(``);
 		app.collectiveResults(pluralAnimal, singularAnimal)
-		console.log(singularAnimal)	
+		// if the animalArray doesn't end in es
 	} else if (lastLetter[0] != `s`) {
-		animalInLetters.push(`s`)
-		console.log(animalInLetters)
-		const singularAnimal = animalInLetters.join(``);
-		console.log(singularAnimal)
-		const pluralAnimal = animalInLetters.join(``);
-		console.log(pluralAnimal)
+		const singularAnimal = animalArray.join(``);
+		// add an s to the end of the array
+		animalArray.push(`s`)
+		// turn the array back into a single word
+		const pluralAnimal = animalArray.join(``);
+		console.log(pluralAnimal, singularAnimal)
 		app.collectiveResults(pluralAnimal, singularAnimal)
 	} 
 };
