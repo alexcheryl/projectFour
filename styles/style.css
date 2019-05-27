@@ -265,9 +265,9 @@ h1 {
   .randomButton:hover {
     letter-spacing: 1px; }
 
-.randomContainer {
+.randomClickontainer {
   margin-top: 5%; }
-  .randomContainer p {
+  .randomClickontainer p {
     margin-bottom: 2%;
     text-shadow: 3px 3px #FFFFFF;
     font-weight: 600; }
