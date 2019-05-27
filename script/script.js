@@ -46,13 +46,13 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			app.holdAnimalVariable = pluralAnimal;
 			// controlling for users entering nothing
 		} else if (singularAnimal === `` || pluralAnimal === `s`) {
-			app.$instructions.html(`Please type in an animal before hitting submit! (ex. Dogs)`)
-			app.$instructions.attr(`aria-label`, `Please type an animal in the textbox before hitting submit! (ex. Dogs)`);
+			app.$instructions.html(`Please type in an animal before hitting submit! (ex. dogs)`)
+			app.$instructions.attr(`aria-label`, `Please type an animal in the textbox before hitting submit! (ex. dogs)`);
 
 			// if user's search has content but returns nothing
 		} else {
-			app.$instructions.html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
-			app.$instructions.attr(`aria-label`, `Sorry, that animal is not in our database. Please try another one! (ex. Cats)`)
+			app.$instructions.html(`Sorry, that animal is not in our database. Please try another one! (ex. cats)`);
+			app.$instructions.attr(`aria-label`, `Sorry, that animal is not in our database. Please try another one! (ex. dats)`)
 		};
 		// only search for the photo if we get a result from the first call
 		if (app.animalInput !== undefined) {
