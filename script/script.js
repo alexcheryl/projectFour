@@ -8,8 +8,6 @@ app.photoURL = `https://pixabay.com/api/?`;
 
 app.animalInput;
 
-app.randomChoice;
-
 app.holdAnimalVariable;
 
 app.$instructions = $(`#instruction`)
@@ -38,29 +36,34 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	}).then(function (results) {
 		//when pluralAnimal is a number it means it has been passed from the randomClick function
 		if (pluralAnimal >= 0) {
+		console.log(results)
 			// turn the returned object into an array
 			let randomAnimalArray = Object.entries(results.animals)
 			// and assign it to a variable
 			app.animalInput = randomAnimalArray[pluralAnimal];
 			// if only a pluralAnimal has been passed
 		} else if (results.animals[singularAnimal] !== undefined) {
+		console.log(results)
 			// assign the return that cooresponds to the user's search to a variable
 			app.animalInput = results.animals[singularAnimal];
 			// hold animal variable
 			app.holdAnimalVariable = singularAnimal;
 			// if only a singularAnimal has been passed
 		} else if (results.animals[pluralAnimal] !== undefined) {
+		console.log(results)
 			// assign the return that cooresponds to the user's search to a variable
 			app.animalInput = results.animals[pluralAnimal];
 			// hold animal variable
 			app.holdAnimalVariable = pluralAnimal;
 			// controlling for users entering nothing
 		} else if (singularAnimal === `` || pluralAnimal === `s`) {
+		console.log(results)
 			app.$instructions.html(`Please type in an animal before hitting submit! (ex. Dogs)`)
 			app.$instructions.attr(`aria-label`, `Please type an animal in the textbox before hitting submit! (ex. Dogs)`);
 
 			// if user's search has content but returns nothing
 		} else {
+		console.log(results)
 			app.$instructions.html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
 			app.$instructions.attr(`aria-label`, `Sorry, that animal is not in our database. Please try another one! (ex. Cats)`)
 		};
@@ -112,8 +115,8 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 							app.displayCollective(app.animalInput);
 							app.hideButton();
 						} else {
-							// call the randomChoice function again, looping until we have a result from both calls
-							app.randomChoice()
+							// call the randomClick function again, looping until we have a result from both calls
+							app.randomClick()
 						}
 					})
 				}
