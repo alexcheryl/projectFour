@@ -11,7 +11,7 @@ app.animalInput;
 app.randomChoice;
 
 app.collectiveResults = (pluralAnimal, singularAnimal) => {
-	
+	//calling our collective names api
 	$.ajax({
 	url: app.collectiveURL,
 	method: `GET`,
@@ -20,27 +20,36 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		format: `json`
 	}
 	}).then(function (results) {
+		//when pluralAnimal is a number it means it has been passed from the randomChoice function
 		if (pluralAnimal >= 0) {
+			// turn the returned object into an array
 			let randomAnimalArray = Object.entries(results.animals)
+			// and assign it to a variable
 			app.animalInput = randomAnimalArray[pluralAnimal];
-			console.log(app.animalInput)
+			// if only a pluralAnimal has been passed
 		} else if (results.animals[singularAnimal] !== undefined) {
+			// assign the return that cooresponds to the user's search to a variable
 			app.animalInput = results.animals[singularAnimal]			
-			console.log(app.animalInput)
+			// if only a singularAnimal has been passed
 		} else if (results.animals[pluralAnimal] !== undefined) {
+			// assign the return that cooresponds to the user's search to a variable
 			app.animalInput = results.animals[pluralAnimal]
-			console.log(app.animalInput)
+			// controlling for users entering nothing
 		} else if (singularAnimal === `` || pluralAnimal === `s`) {
 			$(`#instruction`).html(`Please type in an animal before hitting submit! (ex. Dogs)`)
+			// if user's search has content but returns nothing
 		} else {
 			$(`#instruction`).html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
 		};
 
+		// only search for the
 		if (app.animalInput !== undefined) {
 			if (pluralAnimal >= 0) {
-				query = app.animalInput[0];				
+				query = app.animalInput[0];
+				console.log(`random`)				
 			} else {
 				query = pluralAnimal;
+				console.log(`notrandom`)				
 			}
 
 			app.photoResults = $.ajax({
@@ -150,7 +159,6 @@ app.userInputErrorHandle = (animal) => {
 		animalArray.push(`s`)
 		// turn the array back into a single word
 		const pluralAnimal = animalArray.join(``);
-		console.log(pluralAnimal, singularAnimal)
 		app.collectiveResults(pluralAnimal, singularAnimal)
 	} 
 };
