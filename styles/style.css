@@ -1,155 +1,123 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
 audio, canvas, video {
-  display: inline-block;
-}
+  display: inline-block; }
 
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 [hidden] {
-  display: none;
-}
+  display: none; }
 
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+  -ms-text-size-adjust: 100%; }
 
 a:focus {
-  outline: thin dotted;
-}
+  outline: thin dotted; }
 
 a:active, a:hover {
-  outline: 0;
-}
+  outline: 0; }
 
 h1 {
-  font-size: 2em;
-}
+  font-size: 2em; }
 
 abbr[title] {
-  border-bottom: 1px dotted;
-}
+  border-bottom: 1px dotted; }
 
 b, strong {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 mark {
   background: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 code, kbd, pre, samp {
   font-family: monospace, serif;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 pre {
   white-space: pre-wrap;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
 q {
-  quotes: \201C \201D \2018 \2019;
-}
+  quotes: \201C \201D \2018 \2019; }
 
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sup {
-  top: -.5em;
-}
+  top: -.5em; }
 
 sub {
-  bottom: -.25em;
-}
+  bottom: -.25em; }
 
 img {
-  border: 0;
-}
+  border: 0; }
 
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: .35em .625em .75em;
-}
+  padding: .35em .625em .75em; }
 
 button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
-  margin: 0;
-}
+  margin: 0; }
 
 button, input {
-  line-height: normal;
-}
+  line-height: normal; }
 
 button, html input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: button;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 button[disabled], input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 input[type=checkbox], input[type=radio] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-}
+  box-sizing: border-box;
+  padding: 0; }
 
 input[type=search] {
   -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 textarea {
   overflow: auto;
-  vertical-align: top;
-}
+  vertical-align: top; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 body, figure {
-  margin: 0;
-}
+  margin: 0; }
 
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .clearfix:after {
   visibility: hidden;
@@ -157,13 +125,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-size: 0;
   content: '';
   clear: both;
-  height: 0;
-}
+  height: 0; }
 
 * {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .visuallyHidden:not(:focus):not(:active) {
   position: absolute;
@@ -174,192 +141,190 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0);
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 * {
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased; }
 
 html {
   font-size: 125%;
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: "Montserrat", sans-serif; }
 
 :hover {
   -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-}
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
 
 .originalBackground {
   background-image: url(../assets/background.png);
   background-size: cover;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .wrapper {
   max-width: 1400px;
   width: 80%;
-  margin: 0 auto;
-}
-
-.wrapper .mainContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-}
-
-.wrapper .mainContainer .backgroundContainer {
-  background-color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  padding: 3%;
-  margin-bottom: 5%;
-}
+  margin: 0 auto; }
+  .wrapper .mainContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh; }
+    .wrapper .mainContainer .backgroundContainer {
+      background-color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 3%;
+      margin-bottom: 3%; }
 
 h1 {
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
   text-transform: uppercase;
   font-size: 3.2rem;
   font-weight: 600;
-  text-shadow: 10px 5px white;
+  text-shadow: 8px 5px #FFFFFF;
   letter-spacing: 4px;
-  margin-top: 1%;
-}
+  margin-top: 1%; }
 
 .formContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.formContainer .collectiveTextBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 5%;
-}
-
-.formContainer .collectiveTextBox .textBox {
-  text-align: center;
-  height: 50px;
-  border: 1.5px dotted black;
-  margin-bottom: 1%;
-}
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center; }
+  .formContainer .collectiveTextBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 2%; }
+    .formContainer .collectiveTextBox .textBox {
+      text-align: center;
+      height: 50px;
+      margin-bottom: 1%;
+      border: 2px dotted #10110C; }
 
 main {
-  width: 100%;
-}
+  width: 100%; }
 
 form {
-  width: 50%;
-}
+  width: 50%; }
 
 .btn {
   padding: 1% 3%;
-  background-color: white;
-  border: 1.5px solid black;
+  background-color: #FFFFFF;
   -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
   transition: 0.5s all ease;
-  -webkit-box-shadow: 3px 3px grey;
-          box-shadow: 3px 3px grey;
+  -webkit-box-shadow: 4px 4px #767676;
+  box-shadow: 4px 4px #767676;
   font-weight: 600;
-}
-
-.btn:hover {
-  letter-spacing: 2.5px;
-  -webkit-box-shadow: 5px 5px lightsteelblue;
-          box-shadow: 5px 5px lightsteelblue;
-  border: none;
-}
-
-.btn:active {
-  -webkit-box-shadow: 2px 2px lightsteelblue;
-          box-shadow: 2px 2px lightsteelblue;
-  -webkit-transition: 0.2s all ease;
-  transition: 0.2s all ease;
-}
+  border: 2px solid #10110C; }
+  .btn:hover {
+    letter-spacing: 2.5px;
+    -webkit-box-shadow: 6px 6px lightsteelblue;
+    box-shadow: 6px 6px lightsteelblue;
+    border: none; }
+  .btn:active {
+    -webkit-box-shadow: 2px 2px lightsteelblue;
+    box-shadow: 2px 2px lightsteelblue;
+    -webkit-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+    transition: 0.2s all ease; }
 
 .randomButton {
-  width: 60%;
-}
-
-.randomButton:hover {
-  letter-spacing: 1px;
-}
+  width: 60%; }
+  .randomButton:hover {
+    letter-spacing: 1px; }
 
 .randomContainer {
-  margin-top: 12%;
-}
-
-.randomContainer p {
-  margin-bottom: 2%;
-  text-shadow: 3px 3px white;
-  font-weight: 700;
-}
+  margin-top: 5%; }
+  .randomContainer p {
+    margin-bottom: 2%;
+    text-shadow: 3px 3px #FFFFFF;
+    font-weight: 600; }
 
 .srOnly {
   position: absolute;
   width: 1px;
   height: 1px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .tryAgain {
-  display: none;
-}
+  display: none; }
 
 #instructionContainer {
   width: 75%;
   font-size: 1.3rem;
   margin: 0 auto;
-  font-weight: 400;
-  font-family: 'Zilla Slab Highlight';
-}
+  font-family: "Zilla Slab Highlight", sans-serif; }
 
 .fact {
-  font-family: 'Montserrat';
-  margin-bottom: 0;
-}
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0; }
 
 .animalText {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 .collectiveText {
-  font-family: 'Zilla Slab Highlight';
+  font-family: "Zilla Slab Highlight", sans-serif;
   font-size: 1.5rem;
-}
+  font-weight: 700; }
 
 #instruction {
-  color: black;
+  color: #10110C;
   padding: 1px;
   margin-bottom: 0;
-}
+  font-weight: 700; }
+
+@media (max-width: 990px) {
+  .btn {
+    font-size: 0.8rem; }
+  .randomButton {
+    width: 70%; } }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+    text-shadow: 5px 5px #FFFFFF; }
+  .collectiveText {
+    font-size: 1.2rem; }
+  #instruction {
+    font-size: 1rem; }
+  .randomButton {
+    width: 80%; }
+  form {
+    width: 70%; }
+  .formContainer .collectiveTextBox {
+    margin-bottom: 4%; }
+    .formContainer .collectiveTextBox .textBox {
+      height: 35px; }
+  .wrapper .mainContainer .backgroundContainer {
+    margin-bottom: 8%; } }
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 2.1rem; } }
