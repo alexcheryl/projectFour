@@ -10,6 +10,8 @@ app.animalInput;
 
 app.randomChoice;
 
+app.holdAnimalVariable;
+
 app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	//calling our collective names api
 	$.ajax({
@@ -29,11 +31,15 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			// if only a pluralAnimal has been passed
 		} else if (results.animals[singularAnimal] !== undefined) {
 			// assign the return that cooresponds to the user's search to a variable
-			app.animalInput = results.animals[singularAnimal]			
+			app.animalInput = results.animals[singularAnimal];
+			// hold animal variable
+			app.holdAnimalVariable = singularAnimal;
 			// if only a singularAnimal has been passed
 		} else if (results.animals[pluralAnimal] !== undefined) {
 			// assign the return that cooresponds to the user's search to a variable
-			app.animalInput = results.animals[pluralAnimal]
+			app.animalInput = results.animals[pluralAnimal];
+			// hold animal variable
+			app.holdAnimalVariable = pluralAnimal;
 			// controlling for users entering nothing
 		} else if (singularAnimal === `` || pluralAnimal === `s`) {
 			$(`#instruction`).html(`Please type in an animal before hitting submit! (ex. Dogs)`)
@@ -41,7 +47,6 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		} else {
 			$(`#instruction`).html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
 		};
-
 		// only search for the photo if we get a result from the first call
 		if (app.animalInput !== undefined) {
 			// handling the fact that pluralAnimal is different depending on which button we use 
@@ -67,8 +72,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 				// if we get a picture back
 				if (results.hits[0] !== undefined) {
 					app.displayBackground(results.hits[0].largeImageURL)
-					console.log(pluralAnimal, app.animalInput)
-					app.displayCollective(pluralAnimal, app.animalInput);
+					app.displayCollective(app.animalInput);
 					app.hideButton();
 					//else, do the search again without the editor's choice requirement
 				} else {
@@ -88,7 +92,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 						// if we get a picture back
 						if (results.hits[0] !== undefined) {
 							app.displayBackground(results.hits[0].largeImageURL)
-							app.displayCollective(pluralAnimal, app.animalInput);
+							app.displayCollective(app.animalInput);
 							app.hideButton();
 						} else {
 							// call the randomChoice function again, looping until we have a result from both calls
@@ -105,17 +109,15 @@ app.displayBackground = (results) => {
 	$(`.newBackground`).css(`background-image`, `url(${results})`);
 };
 // displaying the returned animal collective to our page
-app.displayCollective = (animal, results) => {
-	console.log(animal, )
+app.displayCollective = (results) => {
+	console.log(results.collective)
 	// handling the fact that pluralAnimal is different depending on which button we use 
-	if (animal >= 0) {
-		let randomResultsString = results[1].collective;
-		let randomLowerCaseString = randomResultsString.toLowerCase();
-		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${app.animalInput[0]}</span> is known as</p><span class="collectiveText">${randomLowerCaseString}</span>`);
+	if (typeof results.collective === `string`) {
+		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${app.holdAnimalVariable}</span> is known as</p><span class="collectiveText">${results.collective}</span>`);
 	} else {
-		let resultsString = results.collective;
+		let resultsString = results[1].collective;
 		let lowerCaseString = resultsString.toLowerCase();
-		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${app.animalInput[0]}</span> is known as</p><span class="collectiveText">${lowerCaseString}</span>`);
+		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${results[0]}</span> is known as</p><span /class="collectiveText">${lowerCaseString}</span>`);
 	}
 };
 
@@ -135,7 +137,7 @@ app.userInputErrorHandle = (animal) => {
 		animalArray.push(`i`, `e`, `s`);
 		// turn the array back into a single word
 		const pluralAnimal = animalArray.join(``);
-		app.collectiveResults(originalAnimal, pluralAnimal);
+		app.collectiveResults(pluralAnimal, originalAnimal);
 		// if the animalArray ends in es
 	} else if (secondLast[0] === `e`&& lastLetter[0] === `s`) {
 		// remove the last two letters
