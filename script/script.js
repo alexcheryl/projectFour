@@ -57,9 +57,12 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			// controlling for users entering nothing
 		} else if (singularAnimal === `` || pluralAnimal === `s`) {
 			app.$instructions.html(`Please type in an animal before hitting submit! (ex. Dogs)`)
+			app.$instructions.attr(`aria-label`, `Please type an animal in the textbox before hitting submit! (ex. Dogs)`);
+
 			// if user's search has content but returns nothing
 		} else {
 			app.$instructions.html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
+			app.$instructions.attr(`aria-label`, `Sorry, that animal is not in our database. Please try another one! (ex. Cats)`)
 		};
 		// only search for the photo if we get a result from the first call
 		if (app.animalInput !== undefined) {
@@ -128,10 +131,17 @@ app.displayCollective = (results) => {
 	// handling the fact that pluralAnimal is different depending on which button we use 
 	if (typeof results.collective === `string`) {
 		app.$instructionContainer.html(`<p class="fact">A collection of <span class="animalText">${app.holdAnimalVariable}</span> is known as</p><span class="collectiveText">${results.collective}</span>`);
+		app.$instructionContainer.attr(`aria-label`, `A collective of ${app.holdAnimalVariable} is known as ${results.collective}`)
+
 	} else {
 		let resultsString = results[1].collective;
 		let lowerCaseString = resultsString.toLowerCase();
 		app.$instructionContainer.html(`<p class="fact">A collection of <span class="animalText">${results[0]}</span> is known as</p><span /class="collectiveText">${lowerCaseString}</span>`);
+		
+		app.$instructionContainer.attr(
+		`aria-label`,
+		`A collective of ${results[0]} is known as ${lowerCaseString}`
+		)
 	}
 };
 
