@@ -19,13 +19,14 @@ app.$submitContainer = $(`.submitContainer, .collectiveTextBox`);
 app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	//calling our collective names api
 	$.ajax({
-	url: app.collectiveURL,
-	method: `GET`,
-	dataType: `json`,
-	data: {
-		format: `json`
-	}
+		url: app.collectiveURL,
+		method: `GET`,
+		dataType: `json`,
+		data: {
+			format: `json`
+		}
 	}).then(function (results) {
+		console.log(pluralAnimal, singularAnimal);
 		//when pluralAnimal is a number it means it has been passed from the randomClick function
 		if (pluralAnimal >= 0) {
 			// turn the returned object into an array
@@ -48,11 +49,17 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		} else if (singularAnimal === `` || pluralAnimal === `s`) {
 			app.$instructions.html(`Please type in an animal before hitting submit! (ex. dogs)`)
 			app.$instructions.attr(`aria-label`, `Please type an animal in the textbox before hitting submit! (ex. dogs)`);
-
+			$(`.collectiveText`).html(`Please type in an animal before hitting submit! (ex. dogs)`)
+			$(`.collectiveText`).attr(`aria-label`, `Please type an animal in the textbox before hitting submit! (ex. dogs)`);
 			// if user's search has content but returns nothing
 		} else {
+			app.animalInput = results.animals[singularAnimal];
+			app.animalInput = results.animals[pluralAnimal];
+			console.log(app.animalInput)
 			app.$instructions.html(`Sorry, that animal is not in our database. Please try another one! (ex. cats)`);
-			app.$instructions.attr(`aria-label`, `Sorry, that animal is not in our database. Please try another one! (ex. dats)`)
+			app.$instructions.html(`Sorry, that animal is not in our database. Please try another one! (ex. cats)`);
+		 	$(`.collectiveText`).html(`Sorry, that animal is not in our database. Please try another one! (ex. cats)`);
+			$(`.collectiveText`).attr(`aria-label`, `Sorry, that animal is not in our database. Please try another one! (ex. dats)`);
 		};
 		// only search for the photo if we get a result from the first call
 		if (app.animalInput !== undefined) {
