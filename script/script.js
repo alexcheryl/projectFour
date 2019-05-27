@@ -12,6 +12,20 @@ app.randomChoice;
 
 app.holdAnimalVariable;
 
+app.$instructions = $(`#instruction`)
+
+app.$instructionContainer = $(`#instructionContainer`)
+
+app.$newBackground = $(`.newBackground`)
+
+app.$submitAnimal = $(`#submitAnimal`)
+
+app.$randomCollective = $(`#randomCollective`)
+
+app.$tryAgain = $(`.tryAgain`)
+
+app.$submitContainer = $(`.submitContainer, .collectiveTextBox`)
+
 app.collectiveResults = (pluralAnimal, singularAnimal) => {
 	//calling our collective names api
 	$.ajax({
@@ -22,7 +36,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		format: `json`
 	}
 	}).then(function (results) {
-		//when pluralAnimal is a number it means it has been passed from the randomChoice function
+		//when pluralAnimal is a number it means it has been passed from the randomClick function
 		if (pluralAnimal >= 0) {
 			// turn the returned object into an array
 			let randomAnimalArray = Object.entries(results.animals)
@@ -42,10 +56,10 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			app.holdAnimalVariable = pluralAnimal;
 			// controlling for users entering nothing
 		} else if (singularAnimal === `` || pluralAnimal === `s`) {
-			$(`#instruction`).html(`Please type in an animal before hitting submit! (ex. Dogs)`)
+			app.$instructions.html(`Please type in an animal before hitting submit! (ex. Dogs)`)
 			// if user's search has content but returns nothing
 		} else {
-			$(`#instruction`).html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
+			app.$instructions.html(`Sorry, that animal is not in our database. Please try another one! (ex. Cats)`);
 		};
 		// only search for the photo if we get a result from the first call
 		if (app.animalInput !== undefined) {
@@ -106,21 +120,22 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 };
 // displaying the returned picture to the background of our page
 app.displayBackground = (results) => {
-	$(`.newBackground`).css(`background-image`, `url(${results})`);
+	app.$newBackground.css(`background-image`, `url(${results})`);
 };
 // displaying the returned animal collective to our page
 app.displayCollective = (results) => {
 	console.log(results.collective)
 	// handling the fact that pluralAnimal is different depending on which button we use 
 	if (typeof results.collective === `string`) {
-		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${app.holdAnimalVariable}</span> is known as</p><span class="collectiveText">${results.collective}</span>`);
+		app.$instructionContainer.html(`<p class="fact">A collection of <span class="animalText">${app.holdAnimalVariable}</span> is known as</p><span class="collectiveText">${results.collective}</span>`);
 	} else {
 		let resultsString = results[1].collective;
 		let lowerCaseString = resultsString.toLowerCase();
-		$(`#instructionContainer`).html(`<p class="fact">A collection of <span class="animalText">${results[0]}</span> is known as</p><span /class="collectiveText">${lowerCaseString}</span>`);
+		app.$instructionContainer.html(`<p class="fact">A collection of <span class="animalText">${results[0]}</span> is known as</p><span /class="collectiveText">${lowerCaseString}</span>`);
 	}
 };
 
+// user error handling
 app.userInputErrorHandle = (animal) => {
 	// split it into individual letters
 	const animalArray = animal.split(``);
@@ -170,8 +185,10 @@ app.userInputErrorHandle = (animal) => {
 	} 
 };
 
+// user input handler
 app.userInput = () => {
-	$(`#submitAnimal`).click(function (event) {
+	// event listener for the user submit button
+	app.$submitAnimal.click(function (event) {
 		event.preventDefault()
 		// grab the value from the user input
 		const userAnimal = $(`input[id=textBox]`).val();
@@ -182,29 +199,41 @@ app.userInput = () => {
 	});
 };
 
+// random animal function
 app.randomClick = () => {
-	$(`#randomCollective`).click(function (event) {
+	// random animal button event listener
+	app.$randomCollective.click(function (event) {
 		event.preventDefault()
-		app.randomChoice();
+		let random = Math.floor(Math.random() * 340) + 1;
+		app.collectiveResults(random)
 	});
 };
 
-app.hideButton = () => {
-	$(`.submitContainer, .collectiveTextBox`).hide(`1000`);
-	$(`.tryAgain`).show(`700`)
-}
-
-app.randomChoice = () => {
-	let random = Math.floor(Math.random() * 340) + 1;
-	app.collectiveResults(random)
+// go again function
+app.GoAgain = () => {
+	// random animal button event listener
+	app.$tryAgain.click(function (event) {
+		event.preventDefault();
+		app.$submitContainer.show(`700`);
+		app.$tryAgain.hide(`1000`);
+		document.getElementById(`form`).reset();
+	});
 };
 
+// hide form function
+app.hideButton = () => {
+	app.$submitContainer.hide(`1000`);
+	app.$tryAgain.show(`700`);
+}
 
+// init function
 app.init = () => {
 	app.userInput();
 	app.randomClick();
+	app.GoAgain();
 };
 
+// document ready
 $(function () {
 	app.init();
 });
