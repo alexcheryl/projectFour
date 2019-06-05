@@ -26,7 +26,6 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			format: `json`
 		}
 	}).then(function (results) {
-		console.log(pluralAnimal, singularAnimal);
 		//when pluralAnimal is a number it means it has been passed from the randomClick function
 		if (pluralAnimal >= 0) {
 			// turn the returned object into an array
@@ -47,6 +46,7 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 			app.holdAnimalVariable = pluralAnimal;
 			// controlling for users entering nothing
 		} else if (singularAnimal === `` || pluralAnimal === `s`) {
+			app.$instructionContainer.html(`<p class="fact"></p><span class="collectiveText">${results.collective}</span>`);
 			app.$instructions.html(`Please type in an animal before hitting submit! (ex. dogs)`)
 			app.$instructions.attr(`aria-label`, `Please type an animal in the textbox before hitting submit! (ex. dogs)`);
 			$(`.collectiveText`).html(`Please type in an animal before hitting submit! (ex. dogs)`)
@@ -55,11 +55,12 @@ app.collectiveResults = (pluralAnimal, singularAnimal) => {
 		} else {
 			app.animalInput = results.animals[singularAnimal];
 			app.animalInput = results.animals[pluralAnimal];
-			console.log(app.animalInput)
+			app.$instructionContainer.html(`<p class="fact"></p><span class="collectiveText">${results.collective}</span>`);
 			app.$instructions.html(`Sorry, that animal is not in our database. Please try another one! (ex. cats)`);
-			app.$instructions.html(`Sorry, that animal is not in our database. Please try another one! (ex. cats)`);
+			app.$instructions.attr(`Sorry, that animal is not in our database. Please try another one! (ex. cats)`);
 		 	$(`.collectiveText`).html(`Sorry, that animal is not in our database. Please try another one! (ex. cats)`);
-			$(`.collectiveText`).attr(`aria-label`, `Sorry, that animal is not in our database. Please try another one! (ex. dats)`);
+			$(`.collectiveText`).attr(`aria-label`, `Sorry, that animal is not in our database. Please try another one! (ex. cats)`);
+			
 		};
 		// only search for the photo if we get a result from the first call
 		if (app.animalInput !== undefined) {
@@ -124,7 +125,6 @@ app.displayBackground = (results) => {
 };
 // displaying the returned animal collective to our page
 app.displayCollective = (results) => {
-	console.log(results.collective)
 	// handling the fact that pluralAnimal is different depending on which button we use 
 	if (typeof results.collective === `string`) {
 		app.$instructionContainer.html(`<p class="fact">A collection of <span class="animalText">${app.holdAnimalVariable}</span> is known as</p><span class="collectiveText">${results.collective}</span>`);
@@ -146,6 +146,7 @@ app.displayCollective = (results) => {
 app.userInputErrorHandle = (animal) => {
 	// split it into individual letters
 	const animalArray = animal.split(``);
+	console.log(animalArray)
 	// grab the last two letters of the word
 	const lastLetter = animalArray.slice(-1);
 	const secondLast = animalArray.slice(-2);
@@ -196,7 +197,7 @@ app.userInputErrorHandle = (animal) => {
 app.userInput = () => {
 	// event listener for the user submit button
 	app.$submitAnimal.click(function (event) {
-		event.preventDefault()
+		event.preventDefault();
 		// grab the value from the user input
 		const userAnimal = $(`input[id=textBox]`).val();
 		// make sure it's all lowercase
@@ -210,9 +211,9 @@ app.userInput = () => {
 app.randomClick = () => {
 	// random animal button event listener
 	app.$randomCollective.click(function (event) {
-		event.preventDefault()
+		event.preventDefault();
 		let random = Math.floor(Math.random() * 340) + 1;
-		app.collectiveResults(random)
+		app.collectiveResults(random);
 	});
 };
 
@@ -224,6 +225,8 @@ app.GoAgain = () => {
 		app.$submitContainer.show(`700`);
 		app.$tryAgain.hide(`1000`);
 		document.getElementById(`form`).reset();
+		// reset animalInput to prevent errors
+		app.animalInput = undefined;
 	});
 };
 

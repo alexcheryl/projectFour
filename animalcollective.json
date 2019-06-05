@@ -1,0 +1,3000 @@
+{
+  "animals": {
+    "aardvarks": {
+      "collective": "An armoury of aardvarks"
+    },
+    "albatrosses": {
+      "collective": "A rookery or weight of albatrosses"
+    },
+    "angel fish": {
+      "collective": "A company of angel fish"
+    },
+    "antelope": {
+      "collective": "A herd, cluster, or tribe of antelope"
+    },
+    "ants": {
+      "collective": "An army, bike, colony, or swarm of ants"
+    },
+    "apes": {
+      "collective": "A shrewdness, or troop of apes"
+    },
+    "apples": {
+      "collective": "A bushel of apples"
+    },
+    "archer fish": {
+      "collective": "A company of archer fish"
+    },
+    "asses": {
+      "collective": "A coffle, drove, herd, or pace of asses"
+    },
+    "auks": {
+      "collective": "A raft, colony, or flock of auks"
+    },
+    "avocets": {
+      "collective": "A colony of avocets"
+    },
+    "baboons": {
+      "collective": "A congress, flange, rumpus, or troop of baboons"
+    },
+    "bacteria": {
+      "collective": "A colony of bacteria (a culture if laboratory-grown)"
+    },
+    "badgers": {
+      "collective": "A cete, clan, or colony of badgers"
+    },
+    "barbels": {
+      "collective": "A shoal of barbels"
+    },
+    "barracuda": {
+      "collective": "A battery of barracuda"
+    },
+    "bass": {
+      "collective": "A shoal, fleet of bass"
+    },
+    "bats": {
+      "collective": "A colony, cloud, cauldron of bats"
+    },
+    "bears": {
+      "collective": "A maul, pack, sloth, or sleuth of bears"
+    },
+    "beasts": {
+      "collective": "A nobility of beasts"
+    },
+    "beavers": {
+      "collective": "A colony, family, or lodge of beavers"
+    },
+    "bees": {
+      "collective": "A bike, bike cast, cluster, erst, drift, game, grist, hive, hum, rabble, stand, or swarm of bees"
+    },
+    "birds": {
+      "collective": "A congregation, flock, fleet, parcel, pod, or roost of birds"
+    },
+    "birds, aviary": {
+      "collective": "A volery of birds (in an aviary)"
+    },
+    "birds, in flight": {
+      "collective": "A drift, or flight of birds (in flight)"
+    },
+    "birds, large group": {
+      "collective": "A colony of birds (roosting in large numbers)"
+    },
+    "birds, migrating": {
+      "collective": "A rush of birds (migrating)"
+    },
+    "birds, small": {
+      "collective": "A dissimulation of birds (small birds)"
+    },
+    "bison": {
+      "collective": "A herd, gang of bison"
+    },
+    "bitterns": {
+      "collective": "A pretence, sedge or siege of bitterns"
+    },
+    "blackbirds": {
+      "collective": "A cloud, flock, grind, merl of blackbirds"
+    },
+    "blackfish": {
+      "collective": "A grind of blackfish"
+    },
+    "bloodhounds": {
+      "collective": "A sute of bloodhounds"
+    },
+    "boars": {
+      "collective": "A herd, or singular of boars"
+    },
+    "boars, wild": {
+      "collective": "A sounder of wild boars"
+    },
+    "bobolinks": {
+      "collective": "A chain of bobolinks (polygamous bird, Ricebird)"
+    },
+    "bucks": {
+      "collective": "A brace, clash, herd of bucks"
+    },
+    "budgerigars": {
+      "collective": "A chatter, flock of budgerigars"
+    },
+    "buffalo": {
+      "collective": "A gang, herd, or obsinancy of buffalo"
+    },
+    "bullfinches": {
+      "collective": "A bellowing, lowing of bullfinches"
+    },
+    "bullocks": {
+      "collective": "A drove of bullocks"
+    },
+    "bustards": {
+      "collective": "A flock, wake of bustards"
+    },
+    "butterflies": {
+      "collective": "A flight, flutter, kaleidoscope, rabble, swarm, or wing of butterflies"
+    },
+    "butterfly fish": {
+      "collective": "A school of butterfly fish"
+    },
+    "buzzards": {
+      "collective": "A wake, kettle, pack of buzzards"
+    },
+    "camels": {
+      "collective": "A caravan, flock, herd, train of camels"
+    },
+    "capercaillies": {
+      "collective": "A tok of capercaillies (i.e. Old World grouse)"
+    },
+    "capons": {
+      "collective": "A mews, muse of capons"
+    },
+    "cardinals": {
+      "collective": "A conclave, or radiance of cardinals"
+    },
+    "caribou": {
+      "collective": "A herd of caribou"
+    },
+    "caterpillars": {
+      "collective": "An army of caterpillars"
+    },
+    "cats": {
+      "collective": "A clowder, cluster, clutter, destruction, dout, dowt, glaring, kindle, litter, or pounce of cats"
+    },
+    "cats and dogs": {
+      "collective": "A rain of cats and dogs"
+    },
+    "cattle": {
+      "collective": "A drift, drove, kine, mob, herd, team of cattle"
+    },
+    "cattle, two": {
+      "collective": "A yoke of cattle"
+    },
+    "chamois": {
+      "collective": "A herd of chamois"
+    },
+    "cheetahs": {
+      "collective": "A coalition of cheetahs"
+    },
+    "chickens": {
+      "collective": "A brood, chattering, cletch, clutch, flock, or peep of chickens"
+    },
+    "chimpanzees": {
+      "collective": "A whoop, family, cartload of chimpanzees"
+    },
+    "chinchillas": {
+      "collective": "A colony, herd of chinchillas"
+    },
+    "clams": {
+      "collective": "A bed of clams"
+    },
+    "cobras": {
+      "collective": "A quiver of cobras"
+    },
+    "cock-turkeys": {
+      "collective": "A posse of cock-turkeys"
+    },
+    "cockatoos": {
+      "collective": "A chattering, clattering, cluttering, crackle, or family of cockatoos"
+    },
+    "cockles": {
+      "collective": "A bed of cockles"
+    },
+    "cockroaches": {
+      "collective": "An intrusion, or swarm of cockroaches"
+    },
+    "cod": {
+      "collective": "A lap, school of cod"
+    },
+    "colts": {
+      "collective": "A rack, rag, or rake of colts"
+    },
+    "conies": {
+      "collective": "A bury, or game of conies"
+    },
+    "coots": {
+      "collective": "A commotion, cover, covert, fleet, flock, pod, raft, rasp, or swarm of coots"
+    },
+    "corgi": {
+      "collective": "A consort of corgi"
+    },
+    "cormorants": {
+      "collective": "A flight, gulp of cormorants"
+    },
+    "cows": {
+      "collective": "A drift, drove, flink, herd, kine, or mob of cows"
+    },
+    "coyotes": {
+      "collective": "A band, pack, rout, or run of coyotes"
+    },
+    "cranes": {
+      "collective": "A herd, sedge, siege, or flock of cranes"
+    },
+    "crickets": {
+      "collective": "An orchestra of crickets"
+    },
+    "crocodiles": {
+      "collective": "A bask, congregation, float, or nest of crocodiles"
+    },
+    "crows": {
+      "collective": "A cauldron, caucus, congress, cowardice, hover, murder, muster, parcel, or storytelling of crows"
+    },
+    "cubs": {
+      "collective": "A litter of cubs"
+    },
+    "curlews": {
+      "collective": "A head, herd, salon, skein, or wedge of curlews"
+    },
+    "curs": {
+      "collective": "A cowardice of curs"
+    },
+    "dachshunds": {
+      "collective": "A moxie of doxies"
+    },
+    "deer": {
+      "collective": "A bunch, herd, parcel, mob, or rangale of deer"
+    },
+    "deer, roe": {
+      "collective": "A bevy of roe deer"
+    },
+    "deer, two/three": {
+      "collective": "A brace (2), or leash (3) of deer"
+    },
+    "dinosaurs": {
+      "collective": "A herd, or pack of dinosaurs"
+    },
+    "dodos": {
+      "collective": "An extinction of dodos"
+    },
+    "dogfish": {
+      "collective": "A troop of dogfish"
+    },
+    "dogs": {
+      "collective": "A kennel, or pack of dogs"
+    },
+    "dogs, two/three": {
+      "collective": "A brace (2), or leash (3) of dogs"
+    },
+    "dolphins": {
+      "collective": "A herd, flock, pod, school, or team of dolphins"
+    },
+    "donkeys": {
+      "collective": "A herd, drove, or pace of donkeys"
+    },
+    "dotterel": {
+      "collective": "A trip of dotterel"
+    },
+    "doves": {
+      "collective": "A bevy, cote, dole, dule, exaltation, flight, piteousness, or prettying of doves"
+    },
+    "dragonet fish": {
+      "collective": "A swarm of dragonet fish"
+    },
+    "dragons": {
+      "collective": "A doom, flight, weyr, or wing of dragons"
+    },
+    "drongos": {
+      "collective": "A bunch of drongos"
+    },
+    "ducks": {
+      "collective": "A brace, bunch, flush, flock, skein, sord, or string of ducks"
+    },
+    "ducks, diving": {
+      "collective": "A dopping of ducks (diving)"
+    },
+    "ducks, flying": {
+      "collective": "A flight, plump, or team of ducks (while flying)"
+    },
+    "ducks, idle in water": {
+      "collective": "A raft of ducks (while idle in water)"
+    },
+    "ducks, on ground": {
+      "collective": "A badelynge of ducks (on the ground)"
+    },
+    "ducks, swimming": {
+      "collective": "A paddling of ducks (while swimming)"
+    },
+    "dunbirds": {
+      "collective": "A rush, or flight of dunbirds"
+    },
+    "eagles": {
+      "collective": "An aerie, convocation, jubilee, soar, or spread of eagles"
+    },
+    "eels": {
+      "collective": "A fry or swarm of eels"
+    },
+    "eland": {
+      "collective": "A herd of eland"
+    },
+    "elephants": {
+      "collective": "A herd, memory, or parade of elephants"
+    },
+    "elk": {
+      "collective": "A gang or herd of elk"
+    },
+    "emus": {
+      "collective": "A mob of emus"
+    },
+    "falcons": {
+      "collective": "A soar or tower of falcons"
+    },
+    "falcons, pair": {
+      "collective": "A cast of falcons"
+    },
+    "ferrets": {
+      "collective": "A business, cast, or fesnyng of ferrets"
+    },
+    "finches": {
+      "collective": "A charm, chirm, company, trembling, or trimming of finches"
+    },
+    "fish": {
+      "collective": "A catch, draught, drift, fray, haul, kettle, run, scale, school, or shoal of fish"
+    },
+    "flamingos": {
+      "collective": "A flamboyance, flurry, regiment, skein, or stand of flamingos"
+    },
+    "flies": {
+      "collective": "A business, cloud, grist, hatch or swarm of flies"
+    },
+    "flying fish": {
+      "collective": "A glide of flying fish"
+    },
+    "fowl": {
+      "collective": "A plump, trip, or skein (in flight) of fowl"
+    },
+    "foxes": {
+      "collective": "An earth, lead, skulk, or troop of foxes"
+    },
+    "foxes, three": {
+      "collective": "A leash (3) of foxes"
+    },
+    "frogs": {
+      "collective": "A knot, froggery of frogs"
+    },
+    "fur seals": {
+      "collective": "A harem of seals (belonging to one male)"
+    },
+    "geese": {
+      "collective": "A flock, gaggle, trip, team of geese"
+    },
+    "geese, flying": {
+      "collective": "A wedge of geese (flying in a 'V')"
+    },
+    "geldings": {
+      "collective": "A clipping, brace of geldings"
+    },
+    "gerbils": {
+      "collective": "A horde of gerbils"
+    },
+    "giraffes": {
+      "collective": "A corps of giraffe"
+    },
+    "gnats": {
+      "collective": "A cloud of gnats"
+    },
+    "gnus": {
+      "collective": "An implausibility, herd of gnus"
+    },
+    "goats": {
+      "collective": "A drove of goats"
+    },
+    "goldfinch": {
+      "collective": "A vein of goldfinch"
+    },
+    "goldfinches": {
+      "collective": "A drum, charm, glister, chattering, troubling of goldfinches"
+    },
+    "goldfish": {
+      "collective": "A glint, troubling of goldfish"
+    },
+    "goosanders": {
+      "collective": "A dopping of goosanders"
+    },
+    "gorillas": {
+      "collective": "A band of gorillas"
+    },
+    "goshawks": {
+      "collective": "A flight of goshawks"
+    },
+    "grasshoppers": {
+      "collective": "A cloud of grasshoppers"
+    },
+    "greyhounds": {
+      "collective": "A gallop, leash of greyhounds"
+    },
+    "griffins": {
+      "collective": "A pryde of griffins"
+    },
+    "grouse": {
+      "collective": "A brace (2) of grouse"
+    },
+    "guinea pigs": {
+      "collective": "A group of guinea pigs"
+    },
+    "gulls": {
+      "collective": "A colony, pack of gulls"
+    },
+    "hamsters": {
+      "collective": "A horde of hamsters"
+    },
+     "hares": {
+      "collective": "A down of hares"
+    },
+    "hartebeest": {
+      "collective": "A herd of hartebeest"
+    },
+    "harts": {
+      "collective": "A herd of harts"
+    },
+    "hawks": {
+      "collective": "A boil, schizophrenia, mews, aerie, moulting, screw, stream of hawks"
+    },
+    "hedgehogs": {
+      "collective": "A prickle, array of hedgehogs"
+    },
+    "hens": {
+      "collective": "A brood of hens"
+    },
+    "herons": {
+      "collective": "A hedge, siege, sedge, sege, station, rookery, flight, colony of herons"
+    },
+    "herrings": {
+      "collective": "A glean, shoal, army of herrings"
+    },
+    "hippopotami": {
+      "collective": "A crash, pod, school, thunder of hippopotami"
+    },
+    "hippos": {
+      "collective": "A huddle of hippos"
+    },
+    "hogs": {
+      "collective": "A drift, drove of hogs"
+    },
+    "hoodlums": {
+      "collective": "A gang of hoodlums"
+    },
+    "hornets": {
+      "collective": "A bike, nest, swarm of hornets"
+    },
+    "horses": {
+      "collective": "A harras of horses (breeding)"
+    },
+    "hounds": {
+      "collective": "A brace (2), leash (3) of hounds"
+    },
+    "humming birds": {
+      "collective": "A hover of hummingbirds"
+    },
+    "hummingbirds": {
+      "collective": "A charm, shimmer, glittering, bouquet, chattering, drum, troubling of hummingbirds"
+    },
+    "hyenas": {
+      "collective": "A cackle of hyenas"
+    },
+    "ibex": {
+      "collective": "A herd of ibex"
+    },
+    "ibises": {
+      "collective": "A colony of ibises"
+    },
+    "iguanas": {
+      "collective": "A mess of iguanas"
+    },
+    "impalas": {
+      "collective": "A couple of impalas"
+    },
+    "insects": {
+      "collective": "A flight, cloud of insects"
+    },
+    "jackdaws": {
+      "collective": "A train, pair, band of jackdaws"
+    },
+    "jackrabbits": {
+      "collective": "A husk of jackrabbits"
+    },
+    "jays": {
+      "collective": "A band of jays"
+    },
+    "jellyfish": {
+      "collective": "A fluther of jellyfish"
+    },
+    "kangaroo": {
+      "collective": "A flock, troop of kangaroo"
+    },
+    "kangaroos": {
+      "collective": "A court of kangaroos (see note)"
+    },
+    "kestrels": {
+      "collective": "A flight, soar of kestrels"
+    },
+    "kingfishers": {
+      "collective": "A concentration, realm, rattle, clique of kingfishers"
+    },
+    "kites (birds)": {
+      "collective": "A kettle, soar, roost of kites"
+    },
+    "kittens": {
+      "collective": "A kindle of kittens"
+    },
+    "kittens (cats)": {
+      "collective": "A litter of kittens (cats)"
+    },
+    "kittens (rabbits)": {
+      "collective": "A wrack of kittens (rabbits)"
+    },
+    "lambs": {
+      "collective": "A fall of lambs"
+    },
+    "lapwings": {
+      "collective": "A deceit, desert of lapwings"
+    },
+    "larks": {
+      "collective": "A bevy, flight, happiness, springful of larks"
+    },
+    "leopards": {
+      "collective": "A leap, lepe of leopards"
+    },
+    "leverets": {
+      "collective": "A kindle of leverets"
+    },
+    "lice": {
+      "collective": "A colony, infestation, flock of lice"
+    },
+    "linnets": {
+      "collective": "A parcel of linnets"
+    },
+    "lions": {
+      "collective": "A pride of lions"
+    },
+    "lizards": {
+      "collective": "A lounge of lizards"
+    },
+    "llamas": {
+      "collective": "A herd of llamas"
+    },
+    "locusts": {
+      "collective": "A plague, cloud, swarm of locusts"
+    },
+    "lovebirds": {
+      "collective": "A pair, orgy of lovebirds"
+    },
+    "lynx": {
+      "collective": "A chain of lynx"
+    },
+    "mackerel": {
+      "collective": "A shoal of mackerel"
+    },
+    "magpies": {
+      "collective": "A congregation, charm, flock, gulp, murder, tiding, tittering, tribe of magpies"
+    },
+    "mallards": {
+      "collective": "A lute, battling of mallards"
+    },
+    "mares": {
+      "collective": "A stud of mares"
+    },
+    "mares, brood": {
+      "collective": "An overbearance of brood mares"
+    },
+    "martens": {
+      "collective": "A richness, richesse of martens"
+    },
+    "mice": {
+      "collective": "A nest, horde, mischief, click, trip of mice"
+    },
+    "midges": {
+      "collective": "A bite of midges"
+    },
+    "minks": {
+      "collective": "A richness of minks"
+    },
+    "minnows": {
+      "collective": "A shoal, steam, stream, swarm of minnows"
+    },
+    "mites": {
+      "collective": "A mite of mites"
+    },
+    "mockingbirds": {
+      "collective": "An impression, plagiary, exactness, echo, precision, ridicule of mockingbirds"
+    },
+    "moles": {
+      "collective": "A company of moles"
+    },
+    "mongooses": {
+      "collective": "A band, pack of mongooses"
+    },
+    "mongrels": {
+      "collective": "A ménage of mongrels"
+    },
+    "monitors": {
+      "collective": "A bank of monitors"
+    },
+    "monkeys": {
+      "collective": "A barrel of monkeys"
+    },
+    "moorhens": {
+      "collective": "A plump of moorhens"
+    },
+    "moose": {
+      "collective": "A herd of moose"
+    },
+    "mosquitoes": {
+      "collective": "A scourge, swarm of mosquitoes"
+    },
+    "mudhen": {
+      "collective": "A fleet of mudhen"
+    },
+    "mules": {
+      "collective": "A barren of mules"
+    },
+    "mussels": {
+      "collective": "A bed of mussels"
+    },
+    "nightingales": {
+      "collective": "A watch, match, pray, kettle of nightingales"
+    },
+    "orangutans": {
+      "collective": "A buffoonery of orangutans"
+    },
+    "ostriches": {
+      "collective": "A wobble, pride, flock of ostriches"
+    },
+    "otters": {
+      "collective": "A romp, family, raft, bevy, ramp of otters"
+    },
+    "owls": {
+      "collective": "A parliament of owls"
+    },
+    "oxbirds": {
+      "collective": "A fling of oxbirds"
+    },
+    "oxen": {
+      "collective": "A span, meinie of oxen"
+    },
+    "oysters": {
+      "collective": "A bed, hive of oysters"
+    },
+    "oysters, young": {
+      "collective": "A set of young oysters"
+    },
+    "parrots": {
+      "collective": "A company, flock of parrots"
+    },
+    "partridges": {
+      "collective": "A covey, bevy, cover, brace of partridges"
+    },
+    "peacocks": {
+      "collective": "A muster of peacocks"
+    },
+    "pekinese": {
+      "collective": "A pomp of pekinese"
+    },
+    "pelicans": {
+      "collective": "A brief, rookery, scoop, colony, raft, squadron, pod"
+    },
+    "penguins": {
+      "collective": "A colony, rookery of penguins"
+    },
+    "perch": {
+      "collective": "A pack of perch"
+    },
+    "peregrines": {
+      "collective": "A cadge of peregrines"
+    },
+    "pheasants": {
+      "collective": "A bouquet of pheasants (when flushed)"
+    },
+    "pigeons": {
+      "collective": "A dropping of pigeons"
+    },
+    "piglets": {
+      "collective": "A farrow ,passel of piglets"
+    },
+    "pigs": {
+      "collective": "A drove of pigs"
+    },
+    "pilchards": {
+      "collective": "shoal, school of pilchards"
+    },
+    "plankton": {
+      "collective": "A cloud of plankton"
+    },
+    "pochard": {
+      "collective": "A rush, flight, knob (small number) of pochard"
+    },
+    "polar bears": {
+      "collective": "An aurora, pack of polar bears"
+    },
+    "polecats": {
+      "collective": "A chine of polecats"
+    },
+    "ponies": {
+      "collective": "A string of ponies"
+    },
+    "poodles": {
+      "collective": "A salon of Poodles"
+    },
+    "porcupine fish": {
+      "collective": "A cluster of porcupine fish"
+    },
+    "porcupines": {
+      "collective": "A prickle of porcupines"
+    },
+    "porpoises": {
+      "collective": "A herd, pod, school, gam of porpoises"
+    },
+    "possum": {
+      "collective": "A passel of possum"
+    },
+    "poultry": {
+      "collective": "A run of poultry"
+    },
+    "prairie dogs": {
+      "collective": "A coterie, town of prairie dogs"
+    },
+    "ptarmigans": {
+      "collective": "A covey of ptarmigans"
+    },
+    "puffins": {
+      "collective": "A raft, improbability, circus, loomery of puffins"
+    },
+    "pugs": {
+      "collective": "A grumble of Pugs"
+    },
+    "puppies": {
+      "collective": "A litter of puppies"
+    },
+    "quail": {
+      "collective": "A bevy, flush, knob, rout, shake of quail"
+    },
+    "rabbits": {
+      "collective": "A bury, berry, colony, drove, herd, leash, nest, trace, trip, warren, wrack of rabbits"
+    },
+    "raccoons": {
+      "collective": "A mask, gaze, nursery of raccoons"
+    },
+    "racehorses": {
+      "collective": "A field, meet, string of racehorses"
+    },
+    "rainbow fish": {
+      "collective": "A party of rainbow fish"
+    },
+    "rats": {
+      "collective": "A colony, mischief of rats"
+    },
+    "rattle snakes": {
+      "collective": "A rhumba of rattle snakes"
+    },
+    "ravens": {
+      "collective": "A conspiracy, storytelling, tower, aerie, parliament of ravens"
+    },
+    "redwing": {
+      "collective": "A crowd of redwing"
+    },
+    "rhinoceroses": {
+      "collective": "A crash, herd, stubbornness of rhinoceroses"
+    },
+    "roach": {
+      "collective": "A shoal of roach"
+    },
+    "robins": {
+      "collective": "A worm of robins"
+    },
+    "roe deer": {
+      "collective": "A bevy of roe deer"
+    },
+    "roebucks": {
+      "collective": "A bevy of roebucks"
+    },
+    "roes": {
+      "collective": "A bevy of roes"
+    },
+    "rooks": {
+      "collective": "A building, congregation, shoal, wing of rooks"
+    },
+    "ruffs": {
+      "collective": "A hill of ruffs"
+    },
+    "salmon": {
+      "collective": "A bind, school, shoal, draught of salmon"
+    },
+    "sandpipers": {
+      "collective": "A fling of sandpipers"
+    },
+    "sardines": {
+      "collective": "A family of sardines"
+    },
+    "sea fowl": {
+      "collective": "A cloud of sea fowl"
+    },
+    "seagulls": {
+      "collective": "A flock, flotilla, screech, squabble, scavenging of seagulls"
+    },
+    "seahorses": {
+      "collective": "A herd of seahorses"
+    },
+    "seals": {
+      "collective": "A plum, herd, team of seals"
+    },
+    "shad": {
+      "collective": "A shoal of shad"
+    },
+    "sharks": {
+      "collective": "A shiver, school, shoal of sharks"
+    },
+    "sheep": {
+      "collective": "A flock, mob, herd, drift, drove, fold, wing of sheep"
+    },
+    "show dogs": {
+      "collective": "A bench of show dogs"
+    },
+    "shrimps": {
+      "collective": "A troup of shrimps"
+    },
+    "silver foxes": {
+      "collective": "A richness of silver foxes"
+    },
+    "skunks": {
+      "collective": "A stench, surfeit of skunks"
+    },
+    "slugs": {
+      "collective": "A cornucopia of slugs"
+    },
+    "snails": {
+      "collective": "A rout, escargatoire, walk of snails"
+    },
+    "snakes": {
+      "collective": "A bed, knot, trogle of snakes"
+    },
+    "sparrows": {
+      "collective": "A host, tribe of sparrows"
+    },
+    "spiders": {
+      "collective": "A cluster of spiders"
+    },
+    "squirrels": {
+      "collective": "A dray of squirrels (a nest)"
+    },
+    "starlings": {
+      "collective": "A clutter, chattering, constellation, filth, flight, vulgarity, cloud, congregation of starlings"
+    },
+    "storks": {
+      "collective": "A muster of storks"
+    },
+    "swallows": {
+      "collective": "A flight of swallows"
+    },
+    "swans": {
+      "collective": "A ballet, team, whiting, squadron of swans"
+    },
+    "swans, flying": {
+      "collective": "A wedge of swans (flying in a 'V')"
+    },
+    "swifts": {
+      "collective": "A flock, drift of swifts"
+    },
+    "swine": {
+      "collective": "A drift of swine (wild)"
+    },
+    "swordfish": {
+      "collective": "A flotilla of swordfish"
+    },
+    "tapirs": {
+      "collective": "A candle of tapirs"
+    },
+    "termites": {
+      "collective": "A colony, swarm of termites"
+    },
+    "terriers": {
+      "collective": "A terror of terriers"
+    },
+    "threshers": {
+      "collective": "A thrave of threshers"
+    },
+    "thrushes": {
+      "collective": "A mutation of thrushes"
+    },
+    "tigers": {
+      "collective": "A hide of tigers"
+    },
+    "tinkers": {
+      "collective": "A wandering of tinkers"
+    },
+    "toadies": {
+      "collective": "A pander of toadies"
+    },
+    "toads": {
+      "collective": "A knot of toads (derivation: appearance)"
+    },
+    "tortoises": {
+      "collective": "A creep of tortoises"
+    },
+    "toucans": {
+      "collective": "A durante of toucans"
+    },
+    "trout": {
+      "collective": "A hover, shoal of trout"
+    },
+    "tuna": {
+      "collective": "A float, troup of tuna"
+    },
+    "turkeys": {
+      "collective": "A brood of turkeys (immature)"
+    },
+    "turtledoves": {
+      "collective": "A pitying, dule, peerage of turtledoves"
+    },
+    "turtles": {
+      "collective": "A bale of turtles"
+    },
+    "unicorns": {
+      "collective": "A blessing, glory, or marvel of unicorns"
+    },
+    "vipers": {
+      "collective": "A nest, generation of vipers"
+    },
+    "voles": {
+      "collective": "A colony of voles"
+    },
+    "vultures": {
+      "collective": "A wake, nest, colony, looming, meal, venue, vortex of vultures"
+    },
+    "wallabies": {
+      "collective": "A mob of wallabies"
+    },
+    "walruses": {
+      "collective": "A herd, pod, huddle of walruses"
+    },
+    "wasps": {
+      "collective": "A nest, destruction, bike, colony of wasps"
+    },
+    "waterfowl": {
+      "collective": "A bunch of waterfowl"
+    },
+    "weasels": {
+      "collective": "A sneak of weasels (derivation: behaviour)"
+    },
+    "whales": {
+      "collective": "A gam, plump of whales"
+    },
+    "whales, bottle-nosed": {
+      "collective": "A grind of whales"
+    },
+    "whiting": {
+      "collective": "A pod of whiting"
+    },
+    "widgeon": {
+      "collective": "A coil, company, trip, flight, bunch, knob of widgeon"
+    },
+    "wildcats": {
+      "collective": "A destruction, dout of wild cats"
+    },
+    "wildebeest": {
+      "collective": "A herd of wildebeest"
+    },
+    "wildfowl": {
+      "collective": "A know (less than 30) of wildfowl"
+    },
+    "willows": {
+      "collective": "A bend of willows"
+    },
+    "wolves": {
+      "collective": "A herd of wolves"
+    },
+    "wombats": {
+      "collective": "A warren, mob of wombats"
+    },
+    "woodcocks": {
+      "collective": "A fall, covey, plump, flight of woodcocks"
+    },
+    "woodpeckers": {
+      "collective": "A descent, descension of woodpeckers"
+    },
+    "worms": {
+      "collective": "A clew of worms"
+    },
+    "wrens": {
+      "collective": "A herd, flock of wrens"
+    },
+    "yaks": {
+      "collective": "A herd of yaks"
+    },
+    "young oysters": {
+      "collective": "A set of young oysters"
+    },
+    "zebra": {
+      "collective": "A herd, cohort, stripe of zebra"
+    }
+  },
+  "other": {
+    "academics": {
+      "collective": "A faculty of academics"
+    },
+    "acrobats": {
+      "collective": "A troupe of acrobats"
+    },
+    "actors": {
+      "collective": "A cast, company, condescension, cry, or queue of actors"
+    },
+    "actresses": {
+      "collective": "An entrance of actresses"
+    },
+    "adders": {
+      "collective": "A sum of adders"
+    },
+    "aircraft": {
+      "collective": "A flight, or wing of aircraft"
+    },
+    "alpha computers": {
+      "collective": "A cluster of alpha computers"
+    },
+    "ammunition": {
+      "collective": "A cache of ammunition"
+    },
+    "angels": {
+      "collective": "A choir, chorus, flight, host, or pinhead of angels"
+    },
+    "anglers": {
+      "collective": "A catch of anglers"
+    },
+    "arrows": {
+      "collective": "A quiver of arrows"
+    },
+    "artillery": {
+      "collective": "A troop or battery of artillery"
+    },
+    "artistes (acrobats, singers or dancers)": {
+      "collective": "A troupe of artistes"
+    },
+    "artists (painters)": {
+      "collective": "A colony of artists"
+    },
+    "asteroids": {
+      "collective": "A belt of asteroids"
+    },
+    "athletes": {
+      "collective": "A team of athletes"
+    },
+    "bakers": {
+      "A collective": "n aroma or tabernacle of bakers"
+    },
+    "bananas": {
+      "collective": "A hand or bunch of bananas"
+    },
+    "bankers": {
+      "collective": "A wunch of bankers"
+    },
+    "banker collectives, Scottish": {
+      "collective": "A knot of Scottish bankers"
+    },
+    "Baptists": {
+      "collective": "An immersion of Baptists"
+    },
+    "barbers": {
+      "collective": "A babble of barbers"
+    },
+    "barbers, military": {
+      "collective": "A crew of military barbers"
+    },
+    "barflies": {
+      "collective": "A buzz of barflies"
+    },
+    "barons": {
+      "collective": "A thought of barons"
+    },
+    "barristers": {
+      "collective": "A boast, wiggery of barristers"
+    },
+    "barstaff": {
+      "collective": "A disappearance of barstaff"
+    },
+    "bastards": {
+      "collective": "A shower of bastards"
+    },
+    "bayonets": {
+      "collective": "A grove of bayonets"
+    },
+    "beans": {
+      "collective": "A hill of beans"
+    },
+    "beauties": {
+      "collective": "A bevy, or harmony of beauties"
+    },
+    "beggar": {
+      "collective": "A coster, guild, parliament of beggars"
+    },
+    "bells": {
+      "collective": "A peal, change, or carillon of bells"
+    },
+    "bills": {
+      "collective": "A wad of bills"
+    },
+    "bishops": {
+      "collective": "A sea, bench, or psalter of bishops"
+    },
+    "blankets": {
+      "collective": "A swelter of blankets"
+    },
+    "blossoms": {
+      "collective": "A flourish of blossoms"
+    },
+    "bomblets": {
+      "collective": "A cluster of bomblets"
+    },
+    "books": {
+      "collective": "A library, pile, compendium of books"
+    },
+    "boors": {
+      "collective": "A rood of boors"
+    },
+    "borg": {
+      "collective": "A collective, hive of borg"
+    },
+    "bowlers": {
+      "collective": "A keg of bowlers"
+    },
+    "bowls": {
+      "collective": "A nest of bowl's"
+    },
+    "boys": {
+      "collective": "A blush, leer, passel or rascal of boys"
+    },
+    "brats": {
+      "collective": "A passel of brats"
+    },
+    "bread": {
+      "collective": "A batch of bread"
+    },
+    "brush, wood": {
+      "collective": "A bavin of brush (wood)"
+    },
+    "burritos": {
+      "collective": "A pace of burritos"
+    },
+    "business angels": {
+      "collective": "A bevy of business angels"
+    },
+    "cadets": {
+      "collective": "A corps of cadets"
+    },
+    "candidates": {
+      "collective": "A slate of candidates"
+    },
+    "candies": {
+      "collective": "A mint of candies"
+    },
+    "canons": {
+      "collective": "A dignity, chapter of canons"
+    },
+    "canyons": {
+      "collective": "A maze of canyons"
+    },
+    "cards": {
+      "collective": "A deck, pack, hand of cards"
+    },
+    "carpenters": {
+      "collective": "A pound of carpenters"
+    },
+    "cars": {
+      "collective": "A fleet, mayhem, or stack of cars"
+    },
+    "cat houses": {
+      "collective": "A mews of cat houses"
+    },
+    "Catholics": {
+      "collective": "A mass of Catholics"
+    },
+    "cavalry": {
+      "collective": "A squadron of cavalry"
+    },
+    "cellists": {
+      "collective": "A parenthesis of cellists"
+    },
+    "censors": {
+      "collective": "A gaggle of censors"
+    },
+    "chairs": {
+      "collective": "A fold of chairs"
+    },
+    "cheerleaders": {
+      "collective": "An array of cheerleaders"
+    },
+    "chess players": {
+      "collective": "A board, or brood of chess players"
+    },
+    "children": {
+      "collective": "An ingratitude of children"
+    },
+    "choughs": {
+      "collective": "A chattering of choughs"
+    },
+    "churchgoers": {
+      "collective": "A congregation of churchgoers"
+    },
+    "churls": {
+      "collective": "A cluster of churls"
+    },
+    "circuits": {
+      "collective": "A bank of circuits"
+    },
+    "claques": {
+      "collective": "A shriek of claques"
+    },
+    "clerks": {
+      "collective": "A school, rookery of clerks"
+    },
+    "clouds": {
+      "collective": "A soufflé of clouds"
+    },
+    "clowns": {
+      "collective": "A shudder, (an) alley, or pratfall of clowns"
+    },
+    "cobblers": {
+      "collective": "A cutting, drunken ship, drunkship, or load of cobblers"
+    },
+    "cocides": {
+      "collective": "A bed of cocides"
+    },
+    "coins": {
+      "collective": "A roll, or roleau of coins"
+    },
+    "coloraturas": {
+      "collective": "A quaver of coloraturas"
+    },
+    "comedians": {
+      "collective": "A gaggle, or riot of comedians"
+    },
+    "communists": {
+      "collective": "A colhose of communists"
+    },
+    "computers": {
+      "collective": "A cluster of computers"
+    },
+    "computers, linked": {
+      "collective": "A network of computers (linked together)"
+    },
+    "condiments": {
+      "collective": "An accompaniment of condiments"
+    },
+    "conges": {
+      "collective": "A congerie of conges"
+    },
+    "convicts": {
+      "collective": "A chain of convicts"
+    },
+    "cooks": {
+      "collective": "A temperance, hastiness of cooks"
+    },
+    "corn": {
+      "collective": "A sheaf, shock of corn (pile of stalks)"
+    },
+    "coughs": {
+      "collective": "A chattering of coughs"
+    },
+    "courtesans": {
+      "collective": "A harem of courtesans"
+    },
+    "cowboy mounts, extra": {
+      "collective": "A cavvy, or remuda of extra cowboy mounts"
+    },
+    "cowboys": {
+      "collective": "A saunter of cowboys"
+    },
+    "curates": {
+      "collective": "A charge of curates"
+    },
+    "cymbals": {
+      "collective": "A sign of cymbals"
+    },
+    "dancers": {
+      "collective": "A gambol, or troupe of dancers"
+    },
+    "dancers, female": {
+      "collective": "A float of dancers"
+    },
+    "dancers, male": {
+      "collective": "A flight of dancers"
+    },
+    "daubers": {
+      "collective": "A squat of daubers"
+    },
+    "deans": {
+      "collective": "A decanter, or decorum of deans"
+    },
+    "debtors": {
+      "collective": "A split of debtors"
+    },
+    "debutants": {
+      "collective": "A delirium of debutants"
+    },
+    "decorators": {
+      "collective": "A tantrum of decorators"
+    },
+    "dentists": {
+      "collective": "An amalgam, brace, or wince of dentists"
+    },
+    "dermatologists": {
+      "collective": "A rash of dermatologists"
+    },
+    "designers": {
+      "collective": "A set, or subtlety of designers"
+    },
+    "diagnosticians": {
+      "collective": "A guess of diagnosticians"
+    },
+    "dice": {
+      "collective": "A luck of dice"
+    },
+    "dictators": {
+      "collective": "A tyranny of dictators"
+    },
+    "dictionaries": {
+      "collective": "A meaning of dictionaries"
+    },
+    "dieters": {
+      "collective": "A pot of dieters"
+    },
+    "dilation": {
+      "collective": "A dilation of pupils"
+    },
+    "directions": {
+      "collective": "A vane of directions"
+    },
+    "directors": {
+      "collective": "A gild, drove, or board of directors"
+    },
+    "divorcees": {
+      "collective": "A desperation of divorcees"
+    },
+    "DIYers": {
+      "collective": "A bodge of DIYers"
+    },
+    "doctors": {
+      "collective": "A doctrine, or dose of doctors"
+    },
+    "documents": {
+      "collective": "A wealth, or dossier of documents"
+    },
+    "dollars": {
+      "collective": "A fistful of dollars"
+    },
+    "dominoes": {
+      "collective": "A falling of dominoes"
+    },
+    "dons": {
+      "collective": "An obstruction of dons"
+    },
+    "doorkeepers": {
+      "collective": "A safeguard of doorkeepers"
+    },
+    "dowagers": {
+      "collective": "A bevy, or frost of dowagers"
+    },
+    "drinks": {
+      "collective": "A round of drinks"
+    },
+    "drones, literary": {
+      "collective": "A swarm of literary drones"
+    },
+    "drugs": {
+      "collective": "A cocktail of drugs"
+    },
+    "drummers": {
+      "collective": "An asylum, fagot, or roll of drummers"
+    },
+    "drums": {
+      "collective": "A kettle of drums"
+    },
+    "drunks": {
+      "collective": "A load, or stone of drunks"
+    },
+    "dung": {
+      "collective": "A pile of dung"
+    },
+    "dunlin": {
+      "collective": "A fling of dunlin"
+    },
+    "dwarves": {
+      "collective": "A shortage of dwarves"
+    },
+    "earth ware, broken": {
+      "collective": "A fragment of broken earth ware"
+    },
+    "ecdysiasts": {
+      "collective": "A strip of ecdysiasts (striptease artists)"
+    },
+    "economists": {
+      "collective": "A deficit or recession of economists"
+    },
+    "editors": {
+      "collective": "An erudition of editors"
+    },
+    "eggs": {
+      "collective": "A clutch of eggs"
+    },
+    "egos": {
+      "collective": "A pumphouse of egos"
+    },
+    "electors": {
+      "collective": "A college of electors"
+    },
+    "electricians": {
+      "collective": "A grid or ohm of electricians"
+    },
+    "Elvis impersonators": {
+      "collective": "A wiggle of Elvis impersonators"
+    },
+    "embarrassments": {
+      "collective": "A blush of embarrassments"
+    },
+    "emos": {
+      "collective": "An embarrassment of emos"
+    },
+    "emotions": {
+      "collective": "A wash of emotions"
+    },
+    "empiricists": {
+      "collective": "A tabula rasa of empiricists"
+    },
+    "employees": {
+      "collective": "A staff of employees"
+    },
+    "engineers": {
+      "collective": "An awkward, design or geek of engineers"
+    },
+    "Englishmen": {
+      "collective": "A pound of Englishmen"
+    },
+    "epidemiologists": {
+      "collective": "A host of epidemiologists"
+    },
+    "Episcopalians": {
+      "collective": "A government of Episcopalians"
+    },
+    "equestrians": {
+      "collective": "A prance of equestrians"
+    },
+    "errands": {
+      "collective": "A hassle of errands"
+    },
+    "estimations": {
+      "collective": "A bout of estimations"
+    },
+    "experts": {
+      "collective": "A panel, discord of experts"
+    },
+    "exterminators": {
+      "collective": "A slew of exterminators"
+    },
+    "fairies": {
+      "collective": "A herd or fantasy of fairies"
+    },
+    "fans": {
+      "collective": "A thrill of fans"
+    },
+    "farts": {
+      "collective": "A gross of farts"
+    },
+    "Fence builders": {
+      "collective": "An encroachment of fence-builders"
+    },
+    "fencers": {
+      "collective": "A poke of fencers"
+    },
+    "fine print": {
+      "collective": "A pitfall of fine print"
+    },
+    "firewood": {
+      "collective": "A faggot of firewood"
+    },
+    "fishermen": {
+      "collective": "A drift, exaggeration, grumble or sulk of fishermen"
+    },
+    "flashers": {
+      "collective": "A phalanx or revelation of flashers"
+    },
+    "flautists": {
+      "collective": "A phalanx of flautists"
+    },
+    "florists": {
+      "collective": "A bed, bouquet, bunch, garden, or patch of florists"
+    },
+    "flowers": {
+      "collective": "A bunch or bouquet of flowers"
+    },
+    "footballers": {
+      "collective": "A coach of footballers"
+    },
+    "footsteps": {
+      "collective": "A patter of footsteps"
+    },
+    "foresters": {
+      "collective": "A stalk, coop of foresters"
+    },
+    "freezers": {
+      "collective": "A glacier of freezers"
+    },
+    "Frenchmen": {
+      "collective": "A peck of Frenchmen"
+    },
+    "freshmen": {
+      "collective": "A clump, plentitude of freshman"
+    },
+    "friars": {
+      "collective": "A scull, skulk of friars"
+    },
+    "front end loaders": {
+      "collective": "A heap of front-end loaders"
+    },
+    "fungi": {
+      "collective": "A colony of fungi"
+    },
+    "furniture": {
+      "collective": "A suite of furniture"
+    },
+    "gamblers": {
+      "collective": "A talent of gamblers"
+    },
+    "gangsters": {
+      "collective": "A knuckle of gangsters"
+    },
+    "gardeners": {
+      "collective": "A sprinkling of gardeners"
+    },
+    "gays": {
+      "collective": "A village of gays"
+    },
+    "gears": {
+      "collective": "A rack of gears"
+    },
+    "generals": {
+      "collective": "A glitter of generals"
+    },
+    "geneticists": {
+      "collective": "A helix of geneticists"
+    },
+    "geologists": {
+      "collective": "A conglomerate of geologists"
+    },
+    "geometrists": {
+      "collective": "A plane of geometrists"
+    },
+    "Germans": {
+      "collective": "A gross of Germans"
+    },
+    "ghosts": {
+      "collective": "A fraid of ghosts"
+    },
+    "girls": {
+      "collective": "A giggle of girls"
+    },
+    "girls, tanked sorority": {
+      "collective": "A bevy of tanked sorority girls"
+    },
+    "gloves": {
+      "collective": "A elicat of gloves"
+    },
+    "gluttons": {
+      "collective": "A slaver of gluttons"
+    },
+    "gods": {
+      "collective": "A pantheon of gods"
+    },
+    "golf balls": {
+      "collective": "A flight of golf balls"
+    },
+    "golfers": {
+      "collective": "A lie of golfers"
+    },
+    "goons": {
+      "collective": "A plunder of goons"
+    },
+    "goslings": {
+      "collective": "A shoal, skein of goslings"
+    },
+    "gossip columnists": {
+      "collective": "A slither of gossip columnists"
+    },
+    "gossips": {
+      "collective": "A dish of gossips"
+    },
+    "gourmands": {
+      "collective": "A delicatessen of gourmands"
+    },
+    "gourmets": {
+      "collective": "A delicatessen of gourmets"
+    },
+    "governesses": {
+      "collective": "A galaxy of governesses"
+    },
+    "graduate students": {
+      "collective": "A fortitude of graduate students"
+    },
+    "graduates": {
+      "collective": "An unemployment of graduates"
+    },
+    "grammarians": {
+      "collective": "A conjunction of grammarians"
+    },
+    "grandparents": {
+      "collective": "A nag of grandparents"
+    },
+    "grapes": {
+      "collective": "A bunch, cluster of (sour) grapes"
+    },
+    "grasses": {
+      "collective": "A fistful of grasses"
+    },
+    "grits": {
+      "collective": "A mess of grits"
+    },
+    "groupies": {
+      "collective": "A grope of groupies"
+    },
+    "guillemots": {
+      "collective": "A bazaar of guillemots"
+    },
+    "gunships": {
+      "collective": "A hailstorm of gunships"
+    },
+    "gurus": {
+      "collective": "A profit of gurus"
+    },
+    "gym instructors": {
+      "collective": "A set of gym instructors"
+    },
+    "gymnasts": {
+      "collective": "A tumbler of gymnasts"
+    },
+    "gynaecologists": {
+      "collective": "A smear of gynaecologists"
+    },
+    "gypsies": {
+      "collective": "A store of gypsies"
+    },
+    "hackers": {
+      "collective": "A cruft of hackers"
+    },
+    "hair": {
+      "collective": "A tuz, lock, wig of hair"
+    },
+    "hairdressers": {
+      "collective": "A set, swish of hairdressers"
+    },
+    "hammers": {
+      "collective": "A morning of hammers"
+    },
+    "hand tools": {
+      "collective": "A grip of hand tools"
+    },
+    "haries": {
+      "collective": "A swarm of haries"
+    },
+    "harlots": {
+      "collective": "A herd of harlots"
+    },
+    "harpers": {
+      "collective": "A melody of harpers"
+    },
+    "harps": {
+      "collective": "A twangle of harps"
+    },
+    "haute bourgeoisie": {
+      "collective": "An ennui of haute bourgeoisie"
+    },
+    "hedonists": {
+      "collective": "A debauchery of Hedonists"
+    },
+    "heirs": {
+      "collective": "An expectation of heirs"
+    },
+    "helicopters": {
+      "collective": "A hover of helicopters"
+    },
+    "helpers": {
+      "collective": "A hamper of helpers"
+    },
+    "herdsmen": {
+      "collective": "A waywardness of herdsmen"
+    },
+    "hermits": {
+      "collective": "An observance of hermits"
+    },
+    "hills": {
+      "collective": "An undulation of hills"
+    },
+    "hinds": {
+      "collective": "A parcel of hinds"
+    },
+    "hippies": {
+      "collective": "A trip of hippies"
+    },
+    "hit men, retired": {
+      "collective": "A slew of retired hit men"
+    },
+    "hitmen": {
+      "collective": "A magnum of hitmen"
+    },
+    "hobos": {
+      "collective": "A bindle of hobos, A flagon of hobos"
+    },
+    "homework": {
+      "collective": "A slew of homework"
+    },
+    "homosexuals": {
+      "collective": "An ensemble of homosexuals"
+    },
+    "horsemen": {
+      "collective": "A cavalcade of horsemen"
+    },
+    "horseplayers": {
+      "collective": "A parlay of horseplayers"
+    },
+    "hostlers": {
+      "collective": "A laughter of hostlers"
+    },
+    "housekeepers": {
+      "collective": "A foresight of housekeepers"
+    },
+    "houses": {
+      "collective": "A huddle of houses"
+    },
+    "hunters": {
+      "collective": "A blast of hunters"
+    },
+    "husbands": {
+      "collective": "A multiply of husbands"
+    },
+    "hybrids": {
+      "collective": "A vigour of hybrids"
+    },
+    "icebergs": {
+      "collective": "A crush of icebergs"
+    },
+    "ichthyologists": {
+      "collective": "A scale of ichthyologists"
+    },
+    "icons": {
+      "collective": "A shield of icons"
+    },
+    "idiots": {
+      "collective": "A thicket of idiots"
+    },
+    "impediments": {
+      "collective": "A vagary of impediments"
+    },
+    "impressionists": {
+      "collective": "A blur of impressionists"
+    },
+    "in-laws": {
+      "collective": "An imposition of in-laws"
+    },
+    "infantry": {
+      "collective": "A crèche of infantry"
+    },
+    "information": {
+      "collective": "A wealth of information"
+    },
+    "ingénues": {
+      "collective": "A spate of ingénues"
+    },
+    "instruments, musical": {
+      "collective": "A parley of musical instruments"
+    },
+    "intellects": {
+      "collective": "A pretension of intellects"
+    },
+    "interpreters": {
+      "collective": "A tongue lashing of interpreters"
+    },
+    "Irishmen": {
+      "collective": "A pint of Irishmen"
+    },
+    "islands": {
+      "collective": "A chain of islands"
+    },
+    "Italians": {
+      "collective": "An explosion of Italians"
+    },
+    "jewellers": {
+      "collective": "A ring of jewellers"
+    },
+    "jewels": {
+      "collective": "A cache of jewels"
+    },
+    "Jews": {
+      "collective": "A minyan of Jews (the quorum for a congregation)"
+    },
+    "jigsaw puzzlers": {
+      "collective": "An assemblage of jigsaw puzzlers"
+    },
+    "jockeys": {
+      "collective": "A race of jockeys"
+    },
+    "joggers": {
+      "collective": "A wheeze of joggers"
+    },
+    "journalists": {
+      "collective": "A scoop, slant of journalists"
+    },
+    "judges": {
+      "collective": "A bench, sentence, bevy of judges"
+    },
+    "jugglers": {
+      "collective": "A neverthriving of jugglers"
+    },
+    "juniors": {
+      "collective": "A gratitude of juniors"
+    },
+    "keglers": {
+      "collective": "A bowl of keglers"
+    },
+    "keys": {
+      "collective": "A ring of keys (linked physically)"
+    },
+    "kids": {
+      "collective": "A caper of kids"
+    },
+    "kleptomaniacs": {
+      "collective": "A clutch of kleptomaniacs"
+    },
+    "knaves": {
+      "collective": "A riff raff of knaves"
+    },
+    "knights": {
+      "collective": "A banner of knights"
+    },
+    "knots": {
+      "collective": "A medusa, cluster of knots"
+    },
+    "ladies": {
+      "collective": "A bevy of ladies"
+    },
+    "lamentations": {
+      "collective": "A moan of lamentations"
+    },
+    "lavatories": {
+      "collective": "A flush of lavatories"
+    },
+    "laws, bad": {
+      "collective": "A strangle of bad laws"
+    },
+    "lawyers": {
+      "collective": "A disputation of lawyers"
+    },
+    "leaves": {
+      "collective": "An autumn of leaves"
+    },
+    "lecturers": {
+      "collective": "A drift of lecturers"
+    },
+    "lepers": {
+      "collective": "A colony of lepers"
+    },
+    "lesbians": {
+      "collective": "A tough of lesbians"
+    },
+    "liberals": {
+      "collective": "A pink of liberals"
+    },
+    "librarians": {
+      "collective": "A catalogue of librarians"
+    },
+    "lines": {
+      "collective": "A pencil of lines (proper contemporary group term in mathematics)"
+    },
+    "linguists": {
+      "collective": "A babble of linguists"
+    },
+    "lispers": {
+      "collective": "A plethora of lispers"
+    },
+    "listeners": {
+      "collective": "A fascination, audience of listeners"
+    },
+    "loafers": {
+      "collective": "A multiplication of loafers"
+    },
+    "locals": {
+      "collective": "A plague of locals"
+    },
+    "logicians": {
+      "collective": "A sequitur of logicians"
+    },
+    "lollies": {
+      "collective": "A packet of lollies"
+    },
+    "loopholes": {
+      "collective": "A ho ho of loopholes"
+    },
+    "lorries": {
+      "collective": "A fleet, convoy of lorries"
+    },
+    "lovers": {
+      "collective": "A trance of lovers"
+    },
+    "luddites": {
+      "collective": "A smashing of luddites"
+    },
+    "luminaries": {
+      "collective": "An array of luminaries"
+    },
+    "lutists": {
+      "collective": "A litany of lutists"
+    },
+    "machine guns": {
+      "collective": "A nest of machine guns"
+    },
+    "magicians": {
+      "collective": "An illusion of magicians"
+    },
+    "magistrates": {
+      "collective": "A bench of magistrates"
+    },
+    "maidens": {
+      "collective": "A rage of maidens"
+    },
+    "managers": {
+      "collective": "An asylum of managers"
+    },
+    "maps": {
+      "collective": "An atlas of maps"
+    },
+    "marching band": {
+      "collective": "A Sousa of marching bands"
+    },
+    "marines": {
+      "collective": "A muscle of marines"
+    },
+    "masseurs": {
+      "collective": "A pummel of masseurs"
+    },
+    "masters": {
+      "collective": "An example of masters"
+    },
+    "matadors": {
+      "collective": "A pavanne of matadors"
+    },
+    "mathematicians": {
+      "collective": "A number of mathematicians"
+    },
+    "matrons": {
+      "collective": "A riches of matrons"
+    },
+    "meanderings": {
+      "collective": "A confusion of meanderings"
+    },
+    "meatheads": {
+      "collective": "A density of meatheads"
+    },
+    "mechanics": {
+      "collective": "A clutch, torque of mechanics"
+    },
+    "mediators": {
+      "collective": "A compromise, caucus of mediators"
+    },
+    "men": {
+      "collective": "A band of (merry) men"
+    },
+    "merchants": {
+      "collective": "A faith of merchants"
+    },
+    "messengers": {
+      "collective": "A diligence of messengers"
+    },
+    "metallurgists": {
+      "collective": "An amalgamation of metallurgists"
+    },
+    "meteorologists": {
+      "collective": "A shower of meteorologists"
+    },
+    "microbiologists": {
+      "collective": "A colony of microbiologists"
+    },
+    "midwives": {
+      "collective": "An expectation of midwives"
+    },
+    "misers": {
+      "collective": "A horde of misers"
+    },
+    "models": {
+      "collective": "A slouch of models"
+    },
+    "money": {
+      "collective": "A wad, rouleau, cache of money"
+    },
+    "monks": {
+      "collective": "An abomination of monks (see note)"
+    },
+    "Mormons": {
+      "collective": "A book of Mormons"
+    },
+    "morning glories": {
+      "collective": "A dawn of morning glories"
+    },
+    "morticians": {
+      "collective": "A slab of morticians"
+    },
+    "mothers": {
+      "collective": "A consternation of mothers"
+    },
+    "mothers-in-law": {
+      "collective": "A mutter of mothers-in-law"
+    },
+    "motorcyclist": {
+      "collective": "A clutch of motorcyclists"
+    },
+    "mountains": {
+      "collective": "A range of mountains"
+    },
+    "mourners": {
+      "collective": "A cortege of mourners"
+    },
+    "moving men": {
+      "collective": "A truculence of moving men"
+    },
+    "munchkins": {
+      "collective": "A phalanx, throng of munchkins"
+    },
+    "mushrooms": {
+      "collective": "A troop, sproutness of mushrooms"
+    },
+    "musicians": {
+      "collective": "A band of musicians"
+    },
+    "mythological creatures": {
+      "collective": "A bestiary of mythological creatures"
+    },
+    "narcissists": {
+      "collective": "A mug of narcissists"
+    },
+    "natives": {
+      "collective": "A tribe of natives"
+    },
+    "Nazis": {
+      "collective": "A jungle of Nazis"
+    },
+    "neighbours": {
+      "collective": "An annoyance, nerve of neighbours"
+    },
+    "newsboys": {
+      "collective": "A scream of newsboys"
+    },
+    "newscasters": {
+      "collective": "A veneer of newscasters"
+    },
+    "niccolos": {
+      "collective": "A nonsense of niccolos"
+    },
+    "nieces": {
+      "collective": "A squeal of nieces"
+    },
+    "night students": {
+      "collective": "A pallor of night students"
+    },
+    "nightwatchmen": {
+      "collective": "A pallor of nightwatchmen"
+    },
+    "Northerners": {
+      "collective": "A freeze of Northerners"
+    },
+    "nouns": {
+      "collective": "A collective of nouns"
+    },
+    "nuns": {
+      "collective": "A murmur of nuns (as of their sound)"
+    },
+    "nymphomaniacs": {
+      "collective": "A spread of nymphomaniacs"
+    },
+    "oarsmen": {
+      "collective": "A row of oarsmen"
+    },
+    "objectivists": {
+      "collective": "A Rand of Objectivists"
+    },
+    "objects": {
+      "collective": "A collection of objects"
+    },
+    "office boys": {
+      "collective": "An ogle of office boys"
+    },
+    "officers": {
+      "collective": "A mess, execution of officers"
+    },
+    "old guard": {
+      "collective": "A slumber of old guard"
+    },
+    "on-lookers": {
+      "collective": "A fascination of on-lookers"
+    },
+    "onlookers": {
+      "collective": "A crowd of onlookers"
+    },
+    "optometrists": {
+      "collective": "A vision of optometrists"
+    },
+    "orchids": {
+      "collective": "A coterie of orchids"
+    },
+    "orgiasts": {
+      "collective": "A concatenation of orgiasts"
+    },
+    "orphans": {
+      "collective": "An abandonment of orphans"
+    },
+    "orthodontists": {
+      "collective": "A brace of orthodontists"
+    },
+    "orthopaedists": {
+      "collective": "A cast, brace of orthopaedists"
+    },
+    "osteopaths": {
+      "collective": "A joint of osteopaths"
+    },
+    "otologists": {
+      "collective": "A herd of otologists (a physician who specializes in the study of the anatomy and diseases of the ear)"
+    },
+    "over archeivers": {
+      "collective": "A leap of over achievers"
+    },
+    "ovoids": {
+      "collective": "A metamorphosis of ovoids"
+    },
+    "Pacificans": {
+      "collective": "A troop of Pacificans"
+    },
+    "padres": {
+      "collective": "A host of padres"
+    },
+    "painters": {
+      "collective": "An illusion, madder, curse, misbelieving of painters"
+    },
+    "paisleys": {
+      "collective": "A swirl of paisleys"
+    },
+    "palindrome": {
+      "collective": "A tenet of palindromes"
+    },
+    "palm readers": {
+      "collective": "A handful of palm readers"
+    },
+    "paparazzi": {
+      "collective": "A flash of paparazzi"
+    },
+    "paper": {
+      "collective": "A pad of (sheets of) paper"
+    },
+    "paratroops": {
+      "collective": "A storm of paratroops"
+    },
+    "pardoners": {
+      "collective": "A lying of pardoners"
+    },
+    "parents": {
+      "collective": "A persistence of parents"
+    },
+    "parishioners": {
+      "collective": "A kneeling of parishioners"
+    },
+    "parking attendants": {
+      "collective": "A lot of parking attendants"
+    },
+    "parrs": {
+      "collective": "A glut of parrs"
+    },
+    "particulars": {
+      "collective": "A bill of particulars"
+    },
+    "pathologists": {
+      "collective": "A body of pathologists"
+    },
+    "patients": {
+      "collective": "A virtue of patients"
+    },
+    "Patrick": {
+      "collective": "A bungle of Patricks"
+    },
+    "pearls": {
+      "collective": "A rope, string of pearls"
+    },
+    "peas": {
+      "collective": "A pod of peas"
+    },
+    "pedants": {
+      "collective": "A parliament of pedants"
+    },
+    "peddlers": {
+      "collective": "A malapertness (= impertinence) of peddlers"
+    },
+    "Pentecostals": {
+      "collective": "A glossolalia of Pentecostals"
+    },
+    "people": {
+      "collective": "A congregation, crowd of people"
+    },
+    "percussionist": {
+      "collective": "A meter of percussionists"
+    },
+    "performers": {
+      "collective": "A troupe of performers"
+    },
+    "phantoms": {
+      "collective": "A phantasmagoria of phantoms"
+    },
+    "pharmacists": {
+      "collective": "A mixture of pharmacists"
+    },
+    "philatelists": {
+      "collective": "A stampede of philatelists"
+    },
+    "philosophers": {
+      "collective": "A ponder, confusion of philosophers"
+    },
+    "photographers": {
+      "collective": "A clique of photographers"
+    },
+    "photons": {
+      "collective": "An enlightenment of photons"
+    },
+    "physicians": {
+      "collective": "A college of physicians"
+    },
+    "physicists": {
+      "collective": "A nucleus of physicists"
+    },
+    "pianists": {
+      "collective": "A pound of pianists"
+    },
+    "pill-poppers": {
+      "collective": "A gaggle of pill poppers"
+    },
+    "pilots": {
+      "collective": "A yoke of pilots"
+    },
+    "pintail": {
+      "collective": "A knob of pintail"
+    },
+    "pipers": {
+      "collective": "A poverty of pipers"
+    },
+    "pistols": {
+      "collective": "A brace of pistols"
+    },
+    "planes": {
+      "collective": "A stack of planes"
+    },
+    "planets": {
+      "collective": "A quincunx of planets"
+    },
+    "plans": {
+      "collective": "A breakdown of plans"
+    },
+    "players": {
+      "collective": "A cry of players"
+    },
+    "playingcards": {
+      "collective": "A pack, deck of playingcards"
+    },
+    "playwrights": {
+      "collective": "A plot of playwrights"
+    },
+    "pleasure": {
+      "collective": "A glut of pleasure"
+    },
+    "pleasures": {
+      "collective": "A guilt of pleasures"
+    },
+    "plovers": {
+      "collective": "A congregation of plovers"
+    },
+    "plumbers": {
+      "collective": "A flood of plumbers"
+    },
+    "poems": {
+      "collective": "An anthology of poems"
+    },
+    "poets": {
+      "collective": "A rhyme of poets"
+    },
+    "poker player": {
+      "collective": "A stud of poker players"
+    },
+    "politicians": {
+      "collective": "A lie of politicians"
+    },
+    "porters": {
+      "collective": "A grip of porters"
+    },
+    "portfolio managers": {
+      "collective": "A stock of portfolio managers"
+    },
+    "posers": {
+      "collective": "A posse of posers"
+    },
+    "posties": {
+      "collective": "A parcel of posties"
+    },
+    "potato chips": {
+      "collective": "A salt substrate of potato chips"
+    },
+    "pottage": {
+      "collective": "A mess of pottage"
+    },
+    "preachers": {
+      "collective": "A converting of preachers"
+    },
+    "prelates": {
+      "collective": "A pontifica of prelates"
+    },
+    "premises": {
+      "collective": "A breach of premises"
+    },
+    "Presbyterians": {
+      "collective": "A membership of Presbyterians"
+    },
+    "Press Officer": {
+      "collective": "An Alancrockford of Press Officers"
+    },
+    "pretzels": {
+      "collective": "A salt substrate of pretzels"
+    },
+    "priests": {
+      "collective": "A discretion of priests"
+    },
+    "prima donnas": {
+      "collective": "A spite of prima donnas"
+    },
+    "princes": {
+      "collective": "A state of princes"
+    },
+    "prisoners": {
+      "collective": "A pity of prisoners"
+    },
+    "proctologists": {
+      "collective": "A buttload, pile of proctologists"
+    },
+    "professors": {
+      "collective": "A pomposity of professors"
+    },
+    "professors emeriti": {
+      "collective": "An ex cathedra of professors emeriti"
+    },
+    "professors, assistant": {
+      "collective": "A clamber of assistant professors"
+    },
+    "professors, associate": {
+      "collective": "A tenure of associate professors"
+    },
+    "professors, full": {
+      "collective": "An entrenchment of professors"
+    },
+    "programmers": {
+      "collective": "An archive of programmers"
+    },
+    "programmers, Microsoft computer": {
+      "collective": "An asylum, bloat of Microsoft computer programmers"
+    },
+    "proofreaders": {
+      "collective": "A squint of proofreaders"
+    },
+    "prose": {
+      "collective": "An anthology of prose"
+    },
+    "prostitutes": {
+      "collective": "A stable of prostitutes"
+    },
+    "psychoanalysts": {
+      "collective": "A complex of psychoanalysts"
+    },
+    "psychologists": {
+      "collective": "A complex of psychologists"
+    },
+    "public speakers": {
+      "collective": "A twaddle of public speakers"
+    },
+    "puddles": {
+      "collective": "A splash of puddles"
+    },
+    "pugilists": {
+      "collective": "A box of pugilists"
+    },
+    "puns": {
+      "collective": "A groan of puns"
+    },
+    "pupils": {
+      "collective": "A dilation of pupils"
+    },
+    "pyromaniacs": {
+      "collective": "A blaze of pyromaniacs"
+    },
+    "Quakers": {
+      "collective": "A meeting of Quakers"
+    },
+    "queers": {
+      "collective": "A camp of queers"
+    },
+    "quilts": {
+      "collective": "A hotbed of quilts"
+    },
+    "radio ammouncers": {
+      "collective": "A herd of radio announcers"
+    },
+    "radiologists": {
+      "collective": "A series of radiologists"
+    },
+    "railroad schedules": {
+      "collective": "A tragedy of railroad schedules"
+    },
+    "ravers": {
+      "collective": "A scatter of ravers"
+    },
+    "realtors": {
+      "collective": "A lot of realtors"
+    },
+    "reasons": {
+      "collective": "A rainbow of reasons"
+    },
+    "rebuttals": {
+      "collective": "A quiver of rebuttals"
+    },
+    "reeds": {
+      "collective": "A clump of reeds"
+    },
+    "refugees": {
+      "collective": "A flight of refugees"
+    },
+    "relatives": {
+      "collective": "A descent of relatives"
+    },
+    "renters": {
+      "collective": "A knot of renters"
+    },
+    "repairmen": {
+      "collective": "An overcharge of repairmen"
+    },
+    "reporters": {
+      "collective": "A scoop of reporters"
+    },
+    "reviewers": {
+      "collective": "A pan of reviewers"
+    },
+    "ribs": {
+      "collective": "A rack of ribs"
+    },
+    "riches": {
+      "collective": "An embarrassment of riches"
+    },
+    "rioters": {
+      "collective": "A melee of rioters"
+    },
+    "road ragers": {
+      "collective": "A stack of road ragers"
+    },
+    "robbers": {
+      "collective": "A band of robbers"
+    },
+    "sailors": {
+      "collective": "A crew of sailors"
+    },
+    "saints": {
+      "collective": "A calendar of saints"
+    },
+    "salesmen": {
+      "collective": "A sample of salesmen"
+    },
+    "salt": {
+      "collective": "A lot of salt"
+    },
+    "saltines": {
+      "collective": "A salt substrate of saltines"
+    },
+    "satellites": {
+      "collective": "A constellation of satellites"
+    },
+    "scholars": {
+      "collective": "A brow of scholars"
+    },
+    "schoolboys": {
+      "collective": "A rout of schoolboys"
+    },
+    "schoolies": {
+      "collective": "A chalk of schoolies"
+    },
+    "Scots": {
+      "collective": "A disworship, clan of Scots"
+    },
+    "scouts": {
+      "collective": "A woggle of scouts"
+    },
+    "seamstresses": {
+      "collective": "A scolding of seamstresses"
+    },
+    "second thoughts": {
+      "collective": "A clutch of second thoughts"
+    },
+    "seismologists": {
+      "collective": "A quake of seismologists"
+    },
+    "senators": {
+      "collective": "A compromise of senators"
+    },
+    "seniors": {
+      "collective": "An attitude of seniors"
+    },
+    "sergeants at law": {
+      "collective": "A subtlety of sergeants at law"
+    },
+    "sermons": {
+      "collective": "A squash of sermons"
+    },
+    "servants": {
+      "collective": "An obeisance of servants"
+    },
+    "sheets (paper)": {
+      "collective": "A pad of sheets"
+    },
+    "sheldrakes": {
+      "collective": "A doading, dopping of sheldrakes"
+    },
+    "shells (sea)": {
+      "collective": "A midden of shells"
+    },
+    "shells, artillery": {
+      "collective": "A broadside of (artillery) shells (on water)"
+    },
+    "shepherds": {
+      "collective": "A Sodom of shepherds"
+    },
+    "sheriffs": {
+      "collective": "A posse of sheriffs"
+    },
+    "ships": {
+      "collective": "A fleet of ships"
+    },
+    "shoelaces": {
+      "collective": "A knot of shoelaces"
+    },
+    "shoemakers": {
+      "collective": "A blackening of shoemakers"
+    },
+    "shoes": {
+      "collective": "A scandal, pair of shoes"
+    },
+    "shoppers": {
+      "collective": "A crush of shoppers"
+    },
+    "silk screens": {
+      "collective": "A pull of silk-screens"
+    },
+    "silks (QCs)": {
+      "collective": "A purse of silks"
+    },
+    "similes": {
+      "collective": "A superfluity of similes"
+    },
+    "singers": {
+      "collective": "A choir, harmony of singers"
+    },
+    "Sirens": {
+      "collective": "A wail of sirens"
+    },
+    "slaves": {
+      "collective": "A coffle of (chained) slaves"
+    },
+    "snipe": {
+      "collective": "A walk of snipe (at rest)"
+    },
+    "software": {
+      "collective": "A crash of software"
+    },
+    "soldiers": {
+      "collective": "A boast of soldiers"
+    },
+    "sophomores": {
+      "collective": "A platitude of sophomores"
+    },
+    "sopranos": {
+      "collective": "A sweetness of sopranos"
+    },
+    "source code": {
+      "collective": "A bottle of source code"
+    },
+    "spatulas": {
+      "collective": "A beautification of spatulas"
+    },
+    "speed cameras": {
+      "collective": "A tyranny of speed cameras"
+    },
+    "sphincters": {
+      "collective": "A clench of sphincters"
+    },
+    "spies": {
+      "collective": "A treachery of spies"
+    },
+    "sponsors": {
+      "collective": "A splurge of sponsors"
+    },
+    "starlets": {
+      "collective": "A cupful of starlets"
+    },
+    "stage hands": {
+      "collective": "A brace of stage hands"
+    },
+    "stage mothers": {
+      "collective": "A pride of stage mothers"
+    },
+    "stairs": {
+      "collective": "A flight of stairs"
+    },
+    "stalkers": {
+      "collective": "A following of stalkers"
+    },
+    "stars": {
+      "collective": "A constellation of stars"
+    },
+    "statesmen": {
+      "collective": "A disagreement of statesmen"
+    },
+    "statisticians": {
+      "collective": "A number of statisticians"
+    },
+    "sticklebacks": {
+      "collective": "A shoal, spread of sticklebacks"
+    },
+    "sticks": {
+      "collective": "A fagot of sticks"
+    },
+    "stoats": {
+      "collective": "A pack, trip of stoats"
+    },
+    "stockbrokers": {
+      "collective": "A portfolio of stockbrokers"
+    },
+    "swedish": {
+      "collective": "A bork of swedish"
+    },
+    "swimmers": {
+      "collective": "A raft of swimmers"
+    },
+    "swimmers, long distance": {
+      "collective": "A league of long distance swimmers"
+    },
+    "straphangers": {
+      "collective": "A puree of straphangers"
+    },
+    "strumpets": {
+      "collective": "A fanfare of strumpets"
+    },
+    "students": {
+      "collective": "A class of students"
+    },
+    "sub-atomic particles": {
+      "collective": "A minuscule of sub-atomic particles"
+    },
+    "submarines": {
+      "collective": "A pack of submarines"
+    },
+    "suburbanites": {
+      "collective": "A transplant of suburbanites"
+    },
+    "suitcases": {
+      "collective": "A pack of suitcases"
+    },
+    "suitors": {
+      "collective": "A bleach of suitors (another name for cobblers)"
+    },
+    "summoners": {
+      "collective": "An untruth of summoners"
+    },
+    "surfers": {
+      "collective": "A wave of surfers"
+    },
+    "surgeons": {
+      "collective": "An incision of surgeons"
+    },
+    "surprises": {
+      "collective": "A boo of surprises"
+    },
+    "surveyors": {
+      "collective": "A chain of surveyors"
+    },
+    "suspects": {
+      "collective": "A fidget of suspects"
+    },
+    "swingers": {
+      "collective": "A bed of swingers"
+    },
+    "Swiss": {
+      "collective": "A watch of Swiss"
+    },
+    "sycophants": {
+      "collective": "A gush of sycophants"
+    },
+    "tailors": {
+      "collective": "A disguising of tailors"
+    },
+    "tanks": {
+      "collective": "A clank of tanks"
+    },
+    "tapsters": {
+      "collective": "A promise of tapsters"
+    },
+    "TARDISes": {
+      "collective": "A manor of TARDISes"
+    },
+    "tarts": {
+      "collective": "A jam of tarts"
+    },
+    "tasks": {
+      "collective": "An agenda of tasks"
+    },
+    "taverners": {
+      "collective": "A cajolery of taverners"
+    },
+    "taxis": {
+      "collective": "A charge of taxis"
+    },
+    "teachers": {
+      "collective": "A quiz of teachers"
+    },
+    "teal": {
+      "collective": "A diving of teal"
+    },
+    "teddy bears": {
+      "collective": "A hug of teddy bears"
+    },
+    "teenagers": {
+      "collective": "A grunt of teenagers"
+    },
+    "tennis games": {
+      "collective": "A set of tennis games"
+    },
+    "testicles": {
+      "collective": "A clutch of testicles"
+    },
+    "tests": {
+      "collective": "A battery of tests"
+    },
+    "Texans": {
+      "collective": "A mob of Texans"
+    },
+    "theoretical physicists": {
+      "collective": "A field of theoretical physicists"
+    },
+    "thieves": {
+      "collective": "A den, skulk of thieves"
+    },
+    "things": {
+      "collective": "A bunch, cluster of things"
+    },
+    "todays": {
+      "collective": "A twinkling of todays"
+    },
+    "tomorrows": {
+      "collective": "A promise of tomorrows"
+    },
+    "tongues": {
+      "collective": "A convention of tongues"
+    },
+    "tourists": {
+      "collective": "A flock, glaze of tourists"
+    },
+    "toys": {
+      "collective": "An assembly of toys"
+    },
+    "trainers, personal": {
+      "collective": "A torment of trainers"
+    },
+    "trains": {
+      "collective": "A postponement, cancellation of trains"
+    },
+    "tranquilizers": {
+      "collective": "An equanimity of tranquilizers"
+    },
+    "transvestites": {
+      "collective": "A camp, travesty of transvestites"
+    },
+    "trash": {
+      "collective": "A heap of trash"
+    },
+    "tree surgeons": {
+      "collective": "A graft of tree surgeons"
+    },
+    "trees": {
+      "collective": "A clump, forest, coupe of trees"
+    },
+    "tricksters": {
+      "collective": "A tangle of tricksters"
+    },
+    "troops": {
+      "collective": "A parel of troops"
+    },
+    "troubles": {
+      "collective": "A shitload of troubles"
+    },
+    "trucks": {
+      "collective": "A convoy of trucks"
+    },
+    "trumpets": {
+      "collective": "A flourish of trumpets"
+    },
+    "trustees": {
+      "collective": "A board of trustees"
+    },
+    "truths": {
+      "collective": "A pithy of truths"
+    },
+    "tubas": {
+      "collective": "A tumult of tubas"
+    },
+    "turds": {
+      "collective": "A steam of turds"
+    },
+    "twitches": {
+      "collective": "An embarrassment of twitches"
+    },
+    "two-up players": {
+      "collective": "A stoop of two-up players"
+    },
+    "umbrellas": {
+      "collective": "A phalanx of umbrellas"
+    },
+    "under achievers": {
+      "collective": "A drowse of under achievers"
+    },
+    "undertakers": {
+      "collective": "An unction (or extreme unction) of undertakers"
+    },
+    "urologists": {
+      "collective": "A void of urologists"
+    },
+    "used car salesmen": {
+      "collective": "A great deal of used car salesmen"
+    },
+    "ushers": {
+      "collective": "A set of ushers"
+    },
+    "vacationers": {
+      "collective": "A peel of vacationers"
+    },
+    "vases, broken": {
+      "collective": "A mingling of broken vases"
+    },
+    "vegetarians": {
+      "collective": "A sprig of vegetarians"
+    },
+    "vellum": {
+      "collective": "A cutch of vellum"
+    },
+    "vendors": {
+      "collective": "A haggle of vendors"
+    },
+    "vicaries (vicars)": {
+      "collective": "A prudence of vicaries (vicars)"
+    },
+    "violinists": {
+      "collective": "A string of violinists"
+    },
+      "voters": {
+      "collective": "A constituency of voters"
+    },
+    "wagers": {
+      "collective": "A book of wagers"
+    },
+    "waiters": {
+      "collective": "An absence of waiters"
+    },
+    "walkers": {
+      "collective": "An amble of walkers"
+    },
+    "wankers": {
+      "collective": "A palm of wankers"
+    },
+    "wardrobe ladies": {
+      "collective": "A measure of wardrobe ladies"
+    },
+    "warlocks": {
+      "collective": "An incantation of warlocks"
+    },
+    "webmasters": {
+      "collective": "A linkage of webmasters"
+    },
+    "webpages": {
+      "collective": "A charlotte of webpages"
+    },
+    "weed": {
+      "collective": "A stash of weed (when hidden)"
+    },
+    "Weight Watchers": {
+      "collective": "A wailing of Weight Watchers"
+    },
+    "wheat": {
+      "collective": "A sheaf of wheat (stalks) of grain tied together)"
+    },
+    "whores": {
+      "collective": "A parliament of whores (also congress)"
+    },
+    "widows": {
+      "collective": "An ambush of widows"
+    },
+    "wikipedians": {
+      "collective": "A page of wikipedians"
+    },
+    "windmills": {
+      "collective": "A tilt of windmills"
+    },
+    "wine tasters": {
+      "collective": "A bouquet of wine tasters"
+    },
+    "wing-commanders": {
+      "collective": "A flush of wing commanders (aka 'WCs')"
+    },
+    "winners": {
+      "collective": "A shout of winners"
+    },
+    "winnings": {
+      "collective": "A purse of winnings"
+    },
+    "winter fishermen": {
+      "collective": "A chill of winter fishermen"
+    },
+    "witches": {
+      "collective": "A coven of witches"
+    },
+    "wives": {
+      "collective": "An impatience of wives"
+    },
+    "women": {
+      "collective": "A gaggle of women"
+    },
+    "women leering": {
+      "collective": "A clutch of leering women"
+    },
+    "woodwinds": {
+      "collective": "A cord of woodwinds"
+    },
+    "words": {
+      "collective": "A babel of words"
+    },
+    "worshipers": {
+      "collective": "A congregation of worshipers"
+    },
+    "wrestlers": {
+      "collective": "A clutch, crunch of wrestlers"
+    },
+    "writers": {
+      "collective": "A worship of writers"
+    },
+    "yeomen": {
+      "collective": "A fellowship of yeomen"
+    },
+    "yes men": {
+      "collective": "A concert of yes men"
+    },
+    "yolks": {
+      "collective": "A burden of yolks"
+    },
+    "yesterdays": {
+      "collective": "A flight of yesterdays"
+    },
+    "youths": {
+      "collective": "An optimism of youths"
+    }
+  }
+}
